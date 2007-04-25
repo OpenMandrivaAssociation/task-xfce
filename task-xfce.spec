@@ -1,6 +1,6 @@
 Name:    task-xfce
-Version: 2007
-Release: %mkrel 11
+Version: 2008
+Release: %mkrel 1
 Summary: Metapackage for the XFCE
 Group:   Graphical desktop/Xfce
 License: GPL
