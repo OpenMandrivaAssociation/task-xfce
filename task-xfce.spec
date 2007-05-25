@@ -90,13 +90,13 @@ then
 
         if [ $STYLE == "download" ]; then
                 VALUE="Ia Ora Free"
-                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/"
+                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/" /etc/X11/xdg/xfce4/mcs_settings/gtk.xml
         elif [ $STYLE == "desktop" ]; then
                 VALUE="Ia Ora Orange"
-                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/"
+                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/" /etc/X11/xdg/xfce4/mcs_settings/gtk.xml
         elif [ $STYLE == "server" ]; then
                 VALUE="Ia Ora Gray"
-                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/"
+                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/" /etc/X11/xdg/xfce4/mcs_settings/gtk.xml
         fi
 else
 	echo "File not found..."
