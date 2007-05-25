@@ -1,9 +1,11 @@
 Name:    task-xfce
 Version: 2008
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Metapackage for the XFCE
 Group:   Graphical desktop/Xfce
 License: GPL
+
+Source : %name.tar.bz2
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
@@ -43,11 +45,62 @@ Requires: xfprint
 Requires: xfwm
 Requires: xfwm-themes
 Requires: xfce-utils
+Requires: gok
+Requires: orca
+Requires: rhythmbox
+Requires: totem
+Requires: epiphany
+Requires: epiphany-extensions
+Requires: gcalctool
+Requires: pidgin
+Requires: ekiga
+Requires: tomboy
+Requires: f-spot
+Requires: evince
+Requires: gftp
+Requires: claws-mail
+Requires: wengophone
+Requires: tvtime
+#Requires: abiword
+#Requires: gnumeric
+Requires: muine
+Requires: brasero
+Requires: gimp
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
-dependencies for running the XFCE. XFCE plugins not include.
+dependencies for running the XFCE Mandriva Desktop. XFCE plugins not include.
+
+%prep
+%setup -q -n task-xfce
+
+%install
+rm -rf $RPM_BUILD_ROOT
+
+mkdir -p %{buildroot}/etc/X11/xdg
+cp -r xfce4/ %{buildroot}/etc/X11/xdg/
+
+%post
+VALUE=""
+
+if [ -e "/etc/sysconfig/system" ];
+then
+        STYLE=`cat /etc/sysconfig/system | grep META_CLASS | awk -F= '{ print $2 }'`
+        echo $STYLE
+
+        if [ $STYLE == "download" ]; then
+                VALUE="Ia Ora Free"
+                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/"
+        elif [ $STYLE == "desktop" ]; then
+                VALUE="Ia Ora Orange"
+                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/"
+        elif [ $STYLE == "server" ]; then
+                VALUE="Ia Ora Gray"
+                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/"
+        fi
+else
+	echo "File not found..."
+fi
 
 %files
-
-
+%{_sysconfdir}/X11/xdg/xfce4/*
