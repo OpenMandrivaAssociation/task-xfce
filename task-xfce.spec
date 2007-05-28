@@ -1,6 +1,6 @@
 Name:    task-xfce
 Version: 2008
-Release: %mkrel 2
+Release: %mkrel 3
 Summary: Metapackage for the XFCE
 Group:   Graphical desktop/Xfce
 License: GPL
@@ -66,6 +66,7 @@ Requires: tvtime
 Requires: muine
 Requires: brasero
 Requires: gimp
+Requires: gdm
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
