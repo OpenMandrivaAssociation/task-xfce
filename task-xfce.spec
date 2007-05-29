@@ -29,9 +29,8 @@ Requires: thunar
 Requires: xarchiver
 Requires: xfburn
 Requires: xfce
-Requires: xfce4-artwork
+Requires: xfce-artwork
 Requires: xfce-panel
-Requires: xfce4-artwork
 Requires: xfce-appfinder
 Requires: xfce-dev-tools
 Requires: xfce-icon-theme
