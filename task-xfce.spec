@@ -1,6 +1,6 @@
 Name:    task-xfce
 Version: 2008
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: Metapackage for the XFCE
 Group:   Graphical desktop/Xfce
 License: GPL
@@ -103,4 +103,5 @@ else
 fi
 
 %files
+%defattr(0644,root,root,0755)
 %{_sysconfdir}/X11/xdg/xfce4/*
