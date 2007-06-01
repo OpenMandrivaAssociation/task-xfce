@@ -1,81 +1,81 @@
-Name:    task-xfce
-Version: 2008
-Release: %mkrel 4
-Summary: Metapackage for the XFCE
-Group:   Graphical desktop/Xfce
-License: GPL
+Name:    	task-xfce
+Version: 	2008
+Release: 	%mkrel 5
+Summary: 	Metapackage for the Xfce desktop environment.
+Group:   	Graphical desktop/Xfce
+License: 	GPL
+Source0: 	%{name}.tar.bz2
+BuildArch: 	noarch
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
-Source : %name.tar.bz2
+Provides:	xfce
+Obsoletes:	xfce
 
-BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
+# xfce stuff
+Requires:	exo
+Requires:	thunar
+Requires:	xfce-panel
+Requires:	xfce-utils
+Requires:	xfce-mcs-manager
+Requires:	xfce-mcs-plugins
+Requires:	libxfcegui4-plugins
+Requires:	xfprint
+Requires:	mousepad
+Requires:	notification-daemon-xfce
+Requires:	orage
+Requires:	terminal
+Requires:	thunar
+Requires:	xarchiver
+Requires:	xfburn
+Requires:	xfce
+Requires:	xfce-artwork
+Requires:	xfce-panel
+Requires:	xfce-appfinder
+Requires:	xfce-dev-tools
+Requires:	xfce-icon-theme
+Requires:	xfce-mixer
+Requires:	xfce-session
+Requires:	xfce-taskmanager
+Requires:	xfdesktop
+Requires:	xfmedia
+Requires:	xfprint
+Requires:	xfwm
+Requires:	xfwm-themes
+Requires:	xfce-utils
 
-Provides: xfce
-Obsoletes: xfce
-
-Requires: exo
-Requires: thunar
-Requires: xfce-panel
-Requires: xfce-utils
-Requires: xfce-mcs-manager
-Requires: xfce-mcs-plugins
-Requires: libxfcegui4-plugins
-Requires: xfprint
-Requires: mousepad
-Requires: notification-daemon
-Requires: orage
-Requires: terminal
-Requires: thunar
-Requires: xarchiver
-Requires: xfburn
-Requires: xfce
-Requires: xfce-artwork
-Requires: xfce-panel
-Requires: xfce-appfinder
-Requires: xfce-dev-tools
-Requires: xfce-icon-theme
-Requires: xfce-mcs-manager
-Requires: xfce-mixer
-Requires: xfce-session
-Requires: xfce-taskmanager
-Requires: xfdesktop
-Requires: xfmedia
-Requires: xfprint
-Requires: xfwm
-Requires: xfwm-themes
-Requires: xfce-utils
-Requires: gok
-Requires: orca
-Requires: rhythmbox
-Requires: totem
-Requires: epiphany
-Requires: epiphany-extensions
-Requires: gcalctool
-Requires: pidgin
-Requires: ekiga
-Requires: tomboy
-Requires: f-spot
-Requires: evince
-Requires: gftp
-Requires: claws-mail
-Requires: wengophone
-Requires: tvtime
-#Requires: abiword
-#Requires: gnumeric
-Requires: muine
-Requires: brasero
-Requires: gimp
-Requires: gdm
+# non xfce stuff
+Requires:	gok
+Requires:	orca
+Requires:	rhythmbox
+Requires:	totem
+Requires:	epiphany
+Requires:	epiphany-extensions
+Requires:	gcalctool
+Requires:	pidgin
+Requires:	ekiga
+Requires:	tomboy
+Requires:	f-spot
+Requires:	evince
+Requires:	gftp
+Requires:	claws-mail
+Requires:	wengophone
+Requires:	tvtime
+#Requires:	abiword
+#Requires:	gnumeric
+Requires:	muine
+Requires:	brasero
+Requires:	gimp
+Requires:	gdm
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
-dependencies for running the XFCE Mandriva Desktop. XFCE plugins not include.
+dependencies for running the Xfce Mandriva Desktop. Xfce plugins not include.
 
 %prep
-%setup -q -n task-xfce
+%setup -q
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 mkdir -p %{buildroot}/etc/X11/xdg
 cp -r xfce4/ %{buildroot}/etc/X11/xdg/
@@ -103,5 +103,5 @@ else
 fi
 
 %files
-%defattr(0644,root,root,0755)
+%defattr(644,root,root,755)
 %{_sysconfdir}/X11/xdg/xfce4/*
