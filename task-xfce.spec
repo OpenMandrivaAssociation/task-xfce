@@ -72,7 +72,7 @@ This package is a meta-package, meaning that its purpose is to contain
 dependencies for running the Xfce Mandriva Desktop. Xfce plugins not include.
 
 %prep
-%setup -q
+%setup -qn %{name}
 
 %install
 rm -rf %{buildroot}
