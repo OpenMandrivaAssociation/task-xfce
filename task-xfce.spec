@@ -8,9 +8,6 @@ Source0: 	%{name}.tar.bz2
 BuildArch: 	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
-Provides:	xfce
-Obsoletes:	xfce
-
 # xfce stuff
 Requires:	task-xfce-minimal
 
