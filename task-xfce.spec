@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	2008
-Release: 	%mkrel 8
+Release: 	%mkrel 9
 Summary: 	Metapackage for the Xfce desktop environment.
 Group:   	Graphical desktop/Xfce
 License: 	GPL
@@ -12,37 +12,7 @@ Provides:	xfce
 Obsoletes:	xfce
 
 # xfce stuff
-Requires:	exo
-Requires:	thunar
-Requires:	xfce-panel
-Requires:	xfce-utils
-Requires:	xfce-mcs-manager
-Requires:	xfce-mcs-plugins
-Requires:	libxfcegui4-plugins
-Requires:	xfprint
-Requires:	mousepad
-Requires:	notification-daemon-xfce
-Requires:	orage
-Requires:	terminal
-Requires:	thunar
-Conflicts:	xarchiver
-Requires:	squeeze
-Requires:	xfburn
-Requires:	xfce
-Requires:	xfce-artwork
-Requires:	xfce-panel
-Requires:	xfce-appfinder
-Requires:	xfce-dev-tools
-Requires:	xfce-icon-theme
-Requires:	xfce-mixer
-Requires:	xfce-session
-Requires:	xfce-taskmanager
-Requires:	xfdesktop
-Requires:	xfmedia
-Requires:	xfprint
-Requires:	xfwm
-Requires:	xfwm-themes
-Requires:	xfce-utils
+Requires:	task-xfce-minimal
 
 # non xfce stuff
 Requires:	gok
@@ -53,7 +23,6 @@ Requires:	epiphany
 Requires:	epiphany-extensions
 Requires:	gcalctool
 Requires:	pidgin
-#Requires:	gajim
 Requires:	ekiga
 Requires:	tomboy
 Requires:	f-spot
@@ -62,14 +31,11 @@ Requires:	evince
 Requires:	gftp
 Requires:	claws-mail
 Requires:	tvtime
-#Requires:	abiword
-#Requires:	gnumeric
 Requires:	sound-juicer
 Requires:	brasero
 Requires:	gimp
 Requires:	gdm
 Requires:	liferea
-#Requires:	quodlibet
 # removed because crash on 2007.1
 # Requires:	wengophone
 
@@ -96,7 +62,6 @@ Requires:       thunar
 Conflicts:      xarchiver
 Requires:       squeeze
 Requires:       xfburn
-Requires:       xfce
 Requires:       xfce-artwork
 Requires:       xfce-panel
 Requires:       xfce-appfinder
