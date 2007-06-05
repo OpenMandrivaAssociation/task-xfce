@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	2008
-Release: 	%mkrel 6
+Release: 	%mkrel 7
 Summary: 	Metapackage for the Xfce desktop environment.
 Group:   	Graphical desktop/Xfce
 License: 	GPL
@@ -62,8 +62,8 @@ Requires:	evince
 Requires:	gftp
 Requires:	claws-mail
 Requires:	tvtime
-Requires:	abiword
-Requires:	gnumeric
+#Requires:	abiword
+#Requires:	gnumeric
 Requires:	sound-juicer
 Requires:	brasero
 Requires:	gimp
