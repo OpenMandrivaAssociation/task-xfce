@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	2008
-Release: 	%mkrel 5
+Release: 	%mkrel 6
 Summary: 	Metapackage for the Xfce desktop environment.
 Group:   	Graphical desktop/Xfce
 License: 	GPL
@@ -25,7 +25,8 @@ Requires:	notification-daemon-xfce
 Requires:	orage
 Requires:	terminal
 Requires:	thunar
-Requires:	xarchiver
+Conflicts:	xarchiver
+Requires:	squeeze
 Requires:	xfburn
 Requires:	xfce
 Requires:	xfce-artwork
@@ -52,20 +53,25 @@ Requires:	epiphany
 Requires:	epiphany-extensions
 Requires:	gcalctool
 Requires:	pidgin
+#Requires:	gajim
 Requires:	ekiga
 Requires:	tomboy
 Requires:	f-spot
+Requires:	eog
 Requires:	evince
 Requires:	gftp
 Requires:	claws-mail
-Requires:	wengophone
 Requires:	tvtime
-#Requires:	abiword
-#Requires:	gnumeric
-Requires:	muine
+Requires:	abiword
+Requires:	gnumeric
+Requires:	sound-juicer
 Requires:	brasero
 Requires:	gimp
 Requires:	gdm
+Requires:	liferea
+#Requires:	quodlibet
+# removed because crash on 2007.1
+# Requires:	wengophone
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
