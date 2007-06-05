@@ -1,9 +1,10 @@
 Name:    	task-xfce
 Version: 	2008
-Release: 	%mkrel 9
+Release: 	%mkrel 10
 Summary: 	Metapackage for the Xfce desktop environment.
 Group:   	Graphical desktop/Xfce
 License: 	GPL
+URL:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
 Source0: 	%{name}.tar.bz2
 BuildArch: 	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
@@ -41,8 +42,9 @@ This package is a meta-package, meaning that its purpose is to contain
 dependencies for running the Xfce Mandriva Desktop. Xfce plugins not include.
 
 %package minimal
-Summary: Minimal dependencies needed for Xfce desktop
-Group: Graphical desktop/Xfce
+Summary: 	Minimal dependencies needed for Xfce desktop
+Group: 		Graphical desktop/Xfce
+Url:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
 Requires:       exo
 Requires:       thunar
 Requires:       xfce-panel
@@ -112,11 +114,6 @@ else
 	echo "File not found..."
 fi
 
-%files
-%defattr(644,root,root,755)
-%{_sysconfdir}/X11/xdg/xfce4/*
-
 %files minimal
 %defattr(644,root,root,755)
 %{_sysconfdir}/X11/xdg/xfce4/*
-
