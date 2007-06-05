@@ -77,6 +77,48 @@ Requires:	liferea
 This package is a meta-package, meaning that its purpose is to contain
 dependencies for running the Xfce Mandriva Desktop. Xfce plugins not include.
 
+%package minimal
+Summary: Minimal dependencies needed for Xfce desktop
+Group: Graphical desktop/Xfce
+Requires:       exo
+Requires:       thunar
+Requires:       xfce-panel
+Requires:       xfce-utils
+Requires:       xfce-mcs-manager
+Requires:       xfce-mcs-plugins
+Requires:       libxfcegui4-plugins
+Requires:       xfprint
+Requires:       mousepad
+Requires:       notification-daemon-xfce
+Requires:       orage
+Requires:       terminal
+Requires:       thunar
+Conflicts:      xarchiver
+Requires:       squeeze
+Requires:       xfburn
+Requires:       xfce
+Requires:       xfce-artwork
+Requires:       xfce-panel
+Requires:       xfce-appfinder
+Requires:       xfce-dev-tools
+Requires:       xfce-icon-theme
+Requires:       xfce-mixer
+Requires:       xfce-session
+Requires:       xfce-taskmanager
+Requires:       xfdesktop
+Requires:       xfmedia
+Requires:       xfprint
+Requires:       xfwm
+Requires:       xfwm-themes
+Requires:       xfce-utils
+
+Provides:       xfce
+Obsoletes:      xfce
+
+%description minimal
+This package is a meta-package, meaning that its purpose is to contain
+minimal dependencies for running a minimal Xfce desktop environment.
+
 %prep
 %setup -qn %{name}
 
@@ -111,3 +153,8 @@ fi
 %files
 %defattr(644,root,root,755)
 %{_sysconfdir}/X11/xdg/xfce4/*
+
+%files minimal
+%defattr(644,root,root,755)
+%{_sysconfdir}/X11/xdg/xfce4/*
+
