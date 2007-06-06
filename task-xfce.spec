@@ -92,7 +92,7 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/etc/X11/xdg
 cp -r xfce4/ %{buildroot}/etc/X11/xdg/
 
-%post
+%post minimal
 VALUE=""
 
 if [ -e "/etc/sysconfig/system" ];
@@ -113,6 +113,8 @@ then
 else
 	echo "File not found..."
 fi
+
+%files
 
 %files minimal
 %defattr(644,root,root,755)
