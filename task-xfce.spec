@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	2008
-Release: 	%mkrel 10
+Release: 	%mkrel 11
 Summary: 	Metapackage for the Xfce desktop environment.
 Group:   	Graphical desktop/Xfce
 License: 	GPL
@@ -75,6 +75,7 @@ Requires:       xfprint
 Requires:       xfwm
 Requires:       xfwm-themes
 Requires:       xfce-utils
+Requires:	tango-icon-theme
 
 Provides:       xfce
 Obsoletes:      xfce
@@ -93,25 +94,15 @@ mkdir -p %{buildroot}/etc/X11/xdg
 cp -r xfce4/ %{buildroot}/etc/X11/xdg/
 
 %post minimal
-VALUE=""
-
-if [ -e "/etc/sysconfig/system" ];
-then
-        STYLE=`cat /etc/sysconfig/system | grep META_CLASS | awk -F= '{ print $2 }'`
-        echo $STYLE
-
-        if [ $STYLE == "download" ]; then
-                VALUE="Ia Ora Free"
-                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/" /etc/X11/xdg/xfce4/mcs_settings/gtk.xml
-        elif [ $STYLE == "desktop" ]; then
-                VALUE="Ia Ora Orange"
-                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/" /etc/X11/xdg/xfce4/mcs_settings/gtk.xml
-        elif [ $STYLE == "server" ]; then
-                VALUE="Ia Ora Gray"
-                sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$VALUE\"\/>/" /etc/X11/xdg/xfce4/mcs_settings/gtk.xml
-        fi
-else
-	echo "File not found..."
+if [ "$META_CLASS" == "download" ]; then
+    XFCE_GTK_THEME="Ia Ora Free"
+elif [ "$META_CLASS" == "desktop" ]; then
+    XFCE_GTK_THEME="Ia Ora Orange"
+elif [ "$META_CLASS" == "server" ]; then
+    XFCE_GTK_THEME="Ia Ora Gray"
+fi
+if [ -n "$XFCE_GTK_THEME" ]; then
+    sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$XFCE_GTK_THEME\"\/>/" /etc/X11/xdg/xfce4/mcs_settings/gtk.xml
 fi
 
 %files
