@@ -45,37 +45,35 @@ dependencies for running the Xfce Mandriva Desktop. Xfce plugins not include.
 Summary: 	Minimal dependencies needed for Xfce desktop
 Group: 		Graphical desktop/Xfce
 Url:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
+
+# (tpg) please keep requires in alphabetical order
+
 Requires:       exo
-Requires:       thunar
-Requires:       xfce-panel
-Requires:       xfce-utils
-Requires:       xfce-mcs-manager
-Requires:       xfce-mcs-plugins
-Requires:       libxfcegui4-plugins
-Requires:       xfprint
 Requires:       mousepad
 Requires:       notification-daemon-xfce
 Requires:       orage
+Requires:       squeeze
+Requires:	tango-icon-theme
 Requires:       terminal
 Requires:       thunar
 Conflicts:      xarchiver
-Requires:       squeeze
 Requires:       xfburn
-Requires:       xfce-artwork
-Requires:       xfce-panel
+Requires:       xfdesktop
 Requires:       xfce-appfinder
+Requires:       xfce-artwork
 Requires:       xfce-dev-tools
 Requires:       xfce-icon-theme
+Requires:       xfce-mcs-manager
+Requires:       xfce-mcs-plugins
 Requires:       xfce-mixer
+Requires:       xfce-panel
 Requires:       xfce-session
 Requires:       xfce-taskmanager
-Requires:       xfdesktop
+Requires:       xfce-utils
 Requires:       xfmedia
 Requires:       xfprint
 Requires:       xfwm
 Requires:       xfwm-themes
-Requires:       xfce-utils
-Requires:	tango-icon-theme
 
 Provides:       xfce
 Obsoletes:      xfce
