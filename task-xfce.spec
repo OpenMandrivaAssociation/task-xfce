@@ -94,11 +94,12 @@ minimal dependencies for running a minimal Xfce desktop environment.
 %package plugins
 Summary:	Metapackage for the Xfce panel plugins.
 Group:		Graphical desktop/Xfce
-
-
 Requires:	task-xfce-minimal
 
+# (tpg) please keep requires in alphabetical order
+
 Requires:	xfce-battery-plugin
+Requires:	xfce-cddrive-plugin
 Requires:	xfce-cellmodem-plugin
 Requires:	xfce-clipman-plugin
 Requires:	xfce-cpu-freq-plugin
@@ -186,4 +187,3 @@ fi
 %files plugins
 
 %files devel
-
