@@ -5,7 +5,6 @@ Summary: 	Metapackage for the Xfce desktop environment.
 Group:   	Graphical desktop/Xfce
 License: 	GPL
 URL:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
-Source0: 	%{name}.tar.bz2
 BuildArch: 	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
@@ -53,6 +52,12 @@ Xfce panel plugins can be found in %{name}-plugins.
 Summary: 	Minimal dependencies needed for Xfce desktop
 Group: 		Graphical desktop/Xfce
 Url:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
+
+# (tpg) mandriva stuff
+
+Requires:	mandriva-release-One
+Requires:	mandriva-theme-One
+Requires:	mandriva-theme-One-screensaver
 
 # (tpg) please keep requires in alphabetical order
 
@@ -157,32 +162,9 @@ Requires:	xfce-xfc
 This package is a meta-package, meaning that its purpose is to contain
 dependencies for Xfce development environment.
 
-%prep
-%setup -qn %{name}
-
-%install
-rm -rf %{buildroot}
-
-mkdir -p %{buildroot}/etc/X11/xdg
-cp -r xfce4/ %{buildroot}/etc/X11/xdg/
-
-%post minimal
-if [ "$META_CLASS" == "download" ]; then
-    XFCE_GTK_THEME="Ia Ora Free"
-elif [ "$META_CLASS" == "desktop" ]; then
-    XFCE_GTK_THEME="Ia Ora Orange"
-elif [ "$META_CLASS" == "server" ]; then
-    XFCE_GTK_THEME="Ia Ora Gray"
-fi
-if [ -n "$XFCE_GTK_THEME" ]; then
-    sed -i "s/\(name=\"Net\/ThemeName.*value=\)\".*\"\/>/\1\"$XFCE_GTK_THEME\"\/>/" /etc/X11/xdg/xfce4/mcs_settings/gtk.xml
-fi
-
 %files
 
 %files minimal
-%defattr(644,root,root,755)
-%{_sysconfdir}/X11/xdg/xfce4/*
 
 %files plugins
 
