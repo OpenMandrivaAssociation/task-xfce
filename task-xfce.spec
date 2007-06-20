@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	2008
-Release: 	%mkrel 12
+Release: 	%mkrel 13
 Summary: 	Metapackage for the Xfce desktop environment.
 Group:   	Graphical desktop/Xfce
 License: 	GPL
@@ -53,11 +53,6 @@ Summary: 	Minimal dependencies needed for Xfce desktop
 Group: 		Graphical desktop/Xfce
 Url:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
 
-# (tpg) mandriva stuff
-
-Requires:	mandriva-release-One
-Requires:	mandriva-theme-One
-Requires:	mandriva-theme-One-screensaver
 
 # (tpg) please keep requires in alphabetical order
 
