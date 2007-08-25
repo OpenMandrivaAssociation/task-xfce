@@ -22,7 +22,7 @@ Requires:	gcalctool
 Requires:	pidgin
 Requires:	ekiga
 Requires:	tomboy
-Requires:	f-spot
+Requires:	gthumb
 Requires:	eog
 Requires:	evince
 Requires:	gftp
@@ -121,7 +121,7 @@ Requires:	xfce-quicklauncher-plugin
 Requires:	xfce-radio-plugin
 Requires:	xfce-screenshooter-plugin
 Requires:	xfce-sensors-plugin
-Requires:	xfce-smart-plugin
+Requires:	xfce-smartpm-plugin
 Requires:	xfce-smartbookmark-plugin
 Requires:	xfce-systemload-plugin
 Requires:	xfce-time-out-plugin
