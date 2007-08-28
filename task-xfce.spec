@@ -22,7 +22,7 @@ Requires:	gcalctool
 Requires:	pidgin
 Requires:	ekiga
 Requires:	tomboy
-Requires:	gthumb
+Requires:	ristretto
 Requires:	eog
 Requires:	evince
 Requires:	gftp
