@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	2008
-Release: 	%mkrel 14
+Release: 	%mkrel 15
 Summary: 	Metapackage for the Xfce desktop environment.
 Group:   	Graphical desktop/Xfce
 License: 	GPL
@@ -61,7 +61,6 @@ Requires:       mousepad
 Requires:       notification-daemon-xfce
 Requires:       orage
 Requires:       squeeze
-Requires:	tango-icon-theme
 Requires:       terminal
 Requires:       thunar
 Conflicts:      xarchiver
