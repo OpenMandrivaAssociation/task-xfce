@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	2008
-Release: 	%mkrel 15
+Release: 	%mkrel 16
 Summary: 	Metapackage for the Xfce desktop environment.
 Group:   	Graphical desktop/Xfce
 License: 	GPL
@@ -14,7 +14,7 @@ Requires:	task-xfce-minimal
 # non xfce stuff
 Requires:	gok
 Requires:	orca
-Requires:	rhythmbox
+Requires:	exaile
 Requires:	totem
 Requires:	epiphany
 Requires:	epiphany-extensions
@@ -22,9 +22,9 @@ Requires:	gcalctool
 Requires:	pidgin
 Requires:	ekiga
 Requires:	tomboy
-Requires:	ristretto
+Requires:	mirage
 Requires:	eog
-Requires:	evince
+Requires:	epdfview
 Requires:	gftp
 Requires:	claws-mail
 Requires:	tvtime
