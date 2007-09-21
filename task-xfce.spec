@@ -21,7 +21,7 @@ Requires:	gcalctool
 Requires:	pidgin
 Requires:	ekiga
 Requires:	tomboy
-Requires:	mirage
+Requires:	ristretto
 Requires:	eog
 Requires:	epdfview
 Requires:	gftp
