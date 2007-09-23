@@ -21,6 +21,7 @@ Requires:	gcalctool
 Requires:	pidgin
 Requires:	ekiga
 Requires:	tomboy
+Requires:	f-spot
 Requires:	ristretto
 Requires:	eog
 Requires:	epdfview
@@ -32,8 +33,8 @@ Requires:	brasero
 Requires:	gimp
 Requires:	gdm
 Requires:	liferea
-# removed because crash on 2007.1
-# Requires:	wengophone
+Requires:	deluge
+Requires:	wengophone
 
 # (tpg) some additional xfce software
 Requires:	thunar-archive-plugin
