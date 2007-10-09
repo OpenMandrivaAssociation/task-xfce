@@ -69,7 +69,6 @@ Requires:       xfburn
 Requires:       xfdesktop
 Requires:       xfce-appfinder
 Requires:       xfce-artwork
-Requires:       xfce-dev-tools
 Requires:       xfce-icon-theme
 Requires:       xfce-mcs-manager
 Requires:       xfce-mcs-plugins
@@ -149,6 +148,7 @@ Requires:	libxfce4mcs-devel
 Requires:	libxfce4util-devel
 Requires:	python-xfce
 Requires:	thunar-devel
+Requires:       xfce-dev-tools
 Requires:	xfce-mcs-manager-devel
 Requires:	xfce-panel-devel
 Requires:	xfce-xfc
