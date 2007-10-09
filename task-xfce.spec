@@ -1,7 +1,7 @@
 Name:    	task-xfce
 Version: 	2008
 Release: 	%mkrel 19
-Summary: 	Metapackage for the Xfce desktop environment.
+Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
 License: 	GPL
 URL:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
@@ -91,7 +91,7 @@ minimal dependencies for running a minimal Xfce desktop environment.
 
 
 %package plugins
-Summary:	Metapackage for the Xfce panel plugins.
+Summary:	Metapackage for the Xfce panel plugins
 Group:		Graphical desktop/Xfce
 Requires:	task-xfce-minimal
 
