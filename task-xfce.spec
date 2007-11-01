@@ -1,9 +1,9 @@
 Name:    	task-xfce
 Version: 	2008
-Release: 	%mkrel 19
+Release: 	%mkrel 20
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
-License: 	GPL
+License: 	GPLv2+
 URL:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
 BuildArch: 	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
@@ -12,28 +12,28 @@ BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 Requires:	task-xfce-minimal
 
 # non xfce stuff
-Requires:	gok
-Requires:	orca
-Requires:	exaile
-Requires:	totem
-Requires:	mozilla-firefox
-Requires:	gcalctool
-Requires:	pidgin
-Requires:	ekiga
-Requires:	tomboy
-Requires:	f-spot
-Requires:	ristretto
-Requires:	eog
-Requires:	epdfview
-Requires:	gftp
-Requires:	claws-mail
-Requires:	tvtime
-Requires:	sound-juicer
 Requires:	brasero
-Requires:	gimp
-Requires:	gdm
-Requires:	liferea
+Requires:	claws-mail
 Requires:	deluge
+Requires:	ekiga
+Requires:	epdfview
+Requires:	exaile
+Requires:	f-spot
+Requires:	gdm
+Requires:	gftp
+Requires:	gimp
+Requires:	gok
+Requires:	gtk-recordmydesktop
+Requires:	liferea
+Requires:	mozilla-firefox
+Requires:	orca
+Requires:	pidgin
+Requires:	ristretto
+Requires:	sound-juicer
+Requires:	tomboy
+Requires:	totem
+Requires:	tvtime
+Requires:	qalculate-gtk
 Requires:	wengophone
 
 # (tpg) some additional xfce software
@@ -52,7 +52,6 @@ Xfce panel plugins can be found in %{name}-plugins.
 Summary: 	Minimal dependencies needed for Xfce desktop
 Group: 		Graphical desktop/Xfce
 Url:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
-
 
 # (tpg) please keep requires in alphabetical order
 
