@@ -14,6 +14,7 @@ Requires:	task-xfce-minimal
 # non xfce stuff
 Requires:	brasero
 Requires:	claws-mail
+Requires:	catfish
 Requires:	deluge
 Requires:	ekiga
 Requires:	epdfview
