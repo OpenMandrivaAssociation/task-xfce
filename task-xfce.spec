@@ -27,6 +27,7 @@ Requires:	gok
 Requires:	gtk-recordmydesktop
 Requires:	liferea
 Requires:	mozilla-firefox
+Requires:	openoffice.org-gtk
 Requires:	orca
 Requires:	pidgin
 Requires:	ristretto
