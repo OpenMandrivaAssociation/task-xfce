@@ -91,6 +91,16 @@ Provides:       xfce
 Obsoletes:      xfce
 
 %description minimal
+Xfce is a lightweight desktop environment for various *NIX systems.
+Designed for productivity, it loads and executes applications fast, 
+while conserving system resources.
+
+Xfce 4.4 embodies the traditional UNIX philosophy of modularity and 
+re-usability. It consists of a number of components that together 
+provide the full functionality of the desktop environment. They are 
+packaged separately and you can pick and choose from the available 
+packages to create the best personal working environment.
+
 This package is a meta-package, meaning that its purpose is to contain
 minimal dependencies for running a minimal Xfce desktop environment.
 
