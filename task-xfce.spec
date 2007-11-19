@@ -40,7 +40,6 @@ Requires:	tomboy
 Requires:	totem
 Requires:	tvtime
 Requires:	qalculate-gtk
-Requires:	wengophone
 
 # (tpg) some additional xfce software
 Requires:	thunar-archive-plugin
@@ -73,19 +72,19 @@ Conflicts:      xarchiver
 Requires:       xfburn
 Requires:       xfdesktop
 Requires:       xfce4-appfinder
-Requires:       xfce-artwork
 Requires:       xfce4-icon-theme
-Requires:       xfce-mcs-manager
-Requires:       xfce-mcs-plugins
 Requires:       xfce4-mixer
 Requires:       xfce4-panel
 Requires:       xfce4-session
+Requires:       xfwm4
+Requires:       xfwm4-themes
+Requires:       xfce-artwork
+Requires:       xfce-mcs-manager
+Requires:       xfce-mcs-plugins
 Requires:       xfce-taskmanager
 Requires:       xfce-utils
 Requires:       xfmedia
 Requires:       xfprint
-Requires:       xfwm4
-Requires:       xfwm4-themes
 
 Provides:       xfce
 Obsoletes:      xfce
@@ -112,40 +111,41 @@ Requires:	task-xfce-minimal
 
 # (tpg) please keep requires in alphabetical order
 
-Requires:	xfce4-battery-plugin
-Requires:	xfce4-cddrive-plugin
-Requires:	xfce4-cellmodem-plugin
-Requires:	xfce4-clipman-plugin
-Requires:	xfce4-cpu-freq-plugin
-Requires:	xfce4-cpugraph-plugin
-Requires:	xfce4-datetime-plugin
-Requires:	xfce4-dict-plugin
-Requires:	xfce4-diskperf-plugin
-Requires:	xfce4-eyes-plugin
-Requires:	xfce4-fsguard-plugin
-Requires:	xfce4-genmon-plugin
-Requires:	xfce4-mailwatch-plugin
-Requires:	xfce4-minicmd-plugin
-Requires:	xfce4-mount-plugin
-Requires:	xfce4-mpc-plugin
-Requires:	xfce4-netload-plugin
-Requires:	xfce4-notes-plugin
-Requires:	xfce4-places-plugin
-Requires:	xfce4-quicklauncher-plugin
-Requires:	xfce4-radio-plugin
-Requires:	xfce4-screenshooter-plugin
-Requires:	xfce4-sensors-plugin
-Requires:	xfce4-smartpm-plugin
-Requires:	xfce4-smartbookmark-plugin
-Requires:	xfce4-systemload-plugin
-Requires:	xfce4-time-out-plugin
-Requires:	xfce4-timer-plugin
-Requires:	xfce4-verve-plugin
-Requires:	xfce4-wavelan-plugin
-Requires:	xfce4-weather-plugin
-Requires:	xfce4-xfapplet-plugin
-Requires:	xfce4-xkb-plugin
-Requires:	xfce4-xmms-plugin
+Suggests:	xfce4-battery-plugin
+Suggests:	xfce4-cddrive-plugin
+Suggests:	xfce4-cellmodem-plugin
+Suggests:	xfce4-clipman-plugin
+Suggests:	xfce4-cpu-freq-plugin
+Suggests:	xfce4-cpugraph-plugin
+Suggests:	xfce4-datetime-plugin
+Suggests:	xfce4-dict-plugin
+Suggests:	xfce4-diskperf-plugin
+Suggests:	xfce4-eyes-plugin
+Suggests:	xfce4-fsguard-plugin
+Suggests:	xfce4-genmon-plugin
+Suggests:	xfce4-mailwatch-plugin
+Suggests:	xfce4-minicmd-plugin
+Suggests:	xfce4-mount-plugin
+Suggests:	xfce4-mpc-plugin
+Suggests:	xfce4-netload-plugin
+Suggests:	xfce4-notes-plugin
+Suggests:	xfce4-places-plugin
+Suggests:	xfce4-quicklauncher-plugin
+Suggests:	xfce4-radio-plugin
+Suggests:	xfce4-screenshooter-plugin
+Suggests:	xfce4-sensors-plugin
+Suggests:	xfce4-smartpm-plugin
+Suggests:	xfce4-smartbookmark-plugin
+Suggests:	xfce4-systemload-plugin
+Suggests:	xfce4-time-out-plugin
+Suggests:	xfce4-timer-plugin
+Suggests:	xfce4-verve-plugin
+Suggests:	xfce4-wavelan-plugin
+Suggests:	xfce4-weather-plugin
+Suggests:	xfce4-wmdock-plugin
+Suggests:	xfce4-xfapplet-plugin
+Suggests:	xfce4-xkb-plugin
+Suggests:	xfce4-xmms-plugin
 
 %description plugins
 This package is a meta-package, meaning that its purpose is to contain
