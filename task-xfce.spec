@@ -76,12 +76,12 @@ Requires:       xfce4-icon-theme
 Requires:       xfce4-mixer
 Requires:       xfce4-panel
 Requires:       xfce4-session
+Requires:       xfce4-taskmanager
 Requires:       xfwm4
 Requires:       xfwm4-themes
 Requires:       xfce-artwork
 Requires:       xfce-mcs-manager
 Requires:       xfce-mcs-plugins
-Requires:       xfce-taskmanager
 Requires:       xfce-utils
 Requires:       xfmedia
 Requires:       xfprint
