@@ -45,7 +45,7 @@ Requires:	qalculate-gtk
 Requires:	thunar-archive-plugin
 Requires:	thunar-media-tags-plugin
 Requires:	thunar-thumbnailers
-Requires:	xfce-volstatus-icon
+Requires:	xfce4-volstatus-icon
 
 %description
 This package is a meta-package, meaning that its purpose is to  contain
