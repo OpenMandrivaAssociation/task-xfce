@@ -5,7 +5,6 @@ Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
 License: 	GPLv2+
 URL:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
-BuildArch: 	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 # xfce stuff
