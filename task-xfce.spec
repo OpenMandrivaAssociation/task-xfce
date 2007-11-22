@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	2008
-Release: 	%mkrel 22
+Release: 	%mkrel 23
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
 License: 	GPLv2+
@@ -28,9 +28,16 @@ Requires:	gtk-recordmydesktop
 Requires:	liferea
 Requires:	mozilla-firefox
 %if %mdkver >= 2008100
+%ifarch x86_64
+Requires:	openoffice.org64-gtk
+%else
 Requires:	openoffice.org-gtk
+%endif
+%ifarch x86_64
+Requires:	openoffice.org64
 %else
 Requires:	openoffice.org
+%endif
 %endif
 Requires:	orca
 Requires:	pidgin
@@ -68,7 +75,8 @@ Requires:       orage
 Requires:       squeeze
 Requires:       terminal
 Requires:       thunar
-Conflicts:      xarchiver
+# (tpg) disable for now
+#Conflicts:      xarchiver
 Requires:       xfburn
 Requires:       xfdesktop
 Requires:       xfce4-appfinder
