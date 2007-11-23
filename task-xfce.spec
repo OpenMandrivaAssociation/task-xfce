@@ -54,7 +54,7 @@ Requires:	thunar-thumbnailers
 Requires:	xfce4-volstatus-icon
 
 %description
-This package is a meta-package, meaning that its purpose is to  contain
+This package is a meta-package, meaning that its purpose is to contain
 dependencies for running the Xfce Mandriva Desktop. 
 
 Xfce panel plugins can be found in %{name}-plugins.
