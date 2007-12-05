@@ -55,7 +55,7 @@ Requires:	xfce4-volstatus-icon
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
-dependencies for running the Xfce Mandriva Desktop. 
+dependencies for running the Xfce Mandriva Desktop.
 
 Xfce panel plugins can be found in %{name}-plugins.
 
@@ -98,13 +98,13 @@ Obsoletes:      xfce
 
 %description minimal
 Xfce is a lightweight desktop environment for various *NIX systems.
-Designed for productivity, it loads and executes applications fast, 
+Designed for productivity, it loads and executes applications fast,
 while conserving system resources.
 
-Xfce 4.4 embodies the traditional UNIX philosophy of modularity and 
-re-usability. It consists of a number of components that together 
-provide the full functionality of the desktop environment. They are 
-packaged separately and you can pick and choose from the available 
+Xfce 4.4 embodies the traditional UNIX philosophy of modularity and
+re-usability. It consists of a number of components that together
+provide the full functionality of the desktop environment. They are
+packaged separately and you can pick and choose from the available
 packages to create the best personal working environment.
 
 This package is a meta-package, meaning that its purpose is to contain
@@ -149,6 +149,7 @@ Suggests:	xfce4-timer-plugin
 Suggests:	xfce4-verve-plugin
 Suggests:	xfce4-wavelan-plugin
 Suggests:	xfce4-weather-plugin
+Suggests:       xfce4-websearch-plugin
 Suggests:	xfce4-wmdock-plugin
 Suggests:	xfce4-xfapplet-plugin
 Suggests:	xfce4-xkb-plugin
