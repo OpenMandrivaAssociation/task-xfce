@@ -1,6 +1,6 @@
 Name:    	task-xfce
-Version: 	2008
-Release: 	%mkrel 25
+Version: 	2008.0
+Release: 	%mkrel 1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
 License: 	GPLv2+
@@ -51,7 +51,6 @@ Requires:	qalculate-gtk
 Requires:	thunar-archive-plugin
 Requires:	thunar-media-tags-plugin
 Requires:	thunar-thumbnailers
-Requires:	xfce4-volstatus-icon
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -76,22 +75,23 @@ Requires:       terminal
 Requires:       thunar
 # (tpg) disable for now
 #Conflicts:      xarchiver
-Requires:       xfburn
+Suggests:       xfburn
 Requires:       xfdesktop
 Requires:       xfce4-appfinder
-Requires:       xfce4-icon-theme
+Suggests:       xfce4-icon-theme
 Requires:       xfce4-mixer
 Requires:       xfce4-panel
 Requires:       xfce4-session
 Requires:       xfce4-taskmanager
-Requires:       xfwm4
-Requires:       xfwm4-themes
-Requires:       xfce-artwork
+Requires:	xfce4-volstatus-icon
+Suggests:       xfce-artwork
 Requires:       xfce-mcs-manager
 Requires:       xfce-mcs-plugins
 Requires:       xfce-utils
-Requires:       xfmedia
+Suggests:       xfmedia
 Requires:       xfprint
+Requires:       xfwm4
+Suggests:       xfwm4-themes
 
 Provides:       xfce
 Obsoletes:      xfce
@@ -163,7 +163,6 @@ dependencies for running the Xfce panel plugins.
 %package devel
 Summary:	Xfce development metapackage
 Group:		Development/Other
-Requires:	task-xfce-minimal
 
 # (tpg) xfce stuff, please keep in alphabetical order
 Requires:	libxfcegui4-devel
@@ -174,7 +173,7 @@ Requires:	thunar-devel
 Requires:       xfce4-dev-tools
 Requires:	xfce-mcs-manager-devel
 Requires:	xfce4-panel-devel
-Requires:	xfce-xfc
+Requires:	xfc
 
 %description devel
 This package is a meta-package, meaning that its purpose is to contain
