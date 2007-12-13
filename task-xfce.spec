@@ -20,7 +20,7 @@ Requires:	epdfview
 Requires:	exaile
 Requires:	f-spot
 Requires:	gdm
-Requires:	gftp
+Requires:	filezilla
 Requires:	gimp
 Requires:	gok
 Requires:	gtk-recordmydesktop
@@ -139,6 +139,7 @@ Suggests:	xfce4-notes-plugin
 Suggests:	xfce4-places-plugin
 Suggests:	xfce4-quicklauncher-plugin
 Suggests:	xfce4-radio-plugin
+Suggests:	xfce4-rss-plugin
 Suggests:	xfce4-screenshooter-plugin
 Suggests:	xfce4-sensors-plugin
 Suggests:	xfce4-smartpm-plugin
