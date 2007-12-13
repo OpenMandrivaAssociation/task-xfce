@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	2008.0
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
 License: 	GPLv2+
