@@ -5,6 +5,10 @@ Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
 License: 	GPLv2+
 URL:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
+Obsoletes:	task-xfce-2008
+Obsoletes:	task-xfce-minimal-2008
+Obsoletes:	task-xfce-plugins-2008
+Obsoletes:	task-xfce-devel-2008
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 # xfce stuff
@@ -78,13 +82,13 @@ Requires:       thunar
 Suggests:       xfburn
 Requires:       xfdesktop
 Requires:       xfce4-appfinder
+Suggests:       xfce4-artwork
 Suggests:       xfce4-icon-theme
 Requires:       xfce4-mixer
 Requires:       xfce4-panel
 Requires:       xfce4-session
 Requires:       xfce4-taskmanager
 Requires:	xfce4-volstatus-icon
-Suggests:       xfce-artwork
 Requires:       xfce-mcs-manager
 Requires:       xfce-mcs-plugins
 Requires:       xfce-utils
