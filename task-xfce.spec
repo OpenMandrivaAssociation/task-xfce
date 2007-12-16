@@ -1,14 +1,11 @@
 Name:    	task-xfce
 Version: 	2008.0
-Release: 	%mkrel 2
+Release: 	%mkrel 3
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
 License: 	GPLv2+
 URL:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
-Obsoletes:	task-xfce-2008
-Obsoletes:	task-xfce-minimal-2008
-Obsoletes:	task-xfce-plugins-2008
-Obsoletes:	task-xfce-devel-2008
+Obsoletes:	task-xfce <= 2008-24
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 # xfce stuff
@@ -66,6 +63,7 @@ Xfce panel plugins can be found in %{name}-plugins.
 Summary: 	Minimal dependencies needed for Xfce desktop
 Group: 		Graphical desktop/Xfce
 Url:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
+Obsoletes:	task-xfce-minimal <= 2008-24
 
 # (tpg) please keep requires in alphabetical order
 
@@ -119,6 +117,7 @@ minimal dependencies for running a minimal Xfce desktop environment.
 Summary:	Metapackage for the Xfce panel plugins
 Group:		Graphical desktop/Xfce
 Requires:	task-xfce-minimal
+Obsoletes:	task-xfce-plugins <= 2008-24
 
 # (tpg) please keep requires in alphabetical order
 
@@ -168,6 +167,7 @@ dependencies for running the Xfce panel plugins.
 %package devel
 Summary:	Xfce development metapackage
 Group:		Development/Other
+Obsoletes:	task-xfce-devel <= 2008-24
 
 # (tpg) xfce stuff, please keep in alphabetical order
 Requires:	libxfcegui4-devel
