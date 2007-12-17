@@ -6,7 +6,6 @@ Group:   	Graphical desktop/Xfce
 License: 	GPLv2+
 URL:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
 Obsoletes:	task-xfce <= 2008-24
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 # xfce stuff
 Requires:	task-xfce-minimal
