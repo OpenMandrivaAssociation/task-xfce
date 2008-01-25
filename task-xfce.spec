@@ -53,6 +53,7 @@ Requires:	qalculate-gtk
 # (tpg) some additional xfce software
 Requires:	thunar-archive-plugin
 Requires:	thunar-media-tags-plugin
+Requires:	thunar-svn-plugin
 Requires:	thunar-thumbnailers
 
 %description
