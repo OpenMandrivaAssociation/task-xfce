@@ -6,55 +6,26 @@ Group:   	Graphical desktop/Xfce
 License: 	GPLv2+
 URL:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
 Obsoletes:	task-xfce <= 2008-24
+BuildArch:	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
-# xfce stuff
+# (tpg) please keep requires in alphabetical order
+
+Suggests:       orage
+Suggests:       squeeze
+Suggests:	ristretto
 Requires:	task-xfce-minimal
-
-# non xfce stuff
-Requires:	brasero
-Requires:	claws-mail
-Requires:	catfish
-Requires:	clamtk
-Requires:	deluge
-Requires:	ekiga
-Requires:	epdfview
-Requires:	exaile
-Requires:	f-spot
-Requires:	gdm
-Requires:	filezilla
-Requires:	gimp
-Requires:	gok
-Requires:	gpa
-Requires:	gtk-recordmydesktop
-Requires:	liferea
-Requires:	mozilla-firefox
-%if %mdkver >= 2008100
-%ifarch x86_64
-Requires:	openoffice.org64-gtk
-%else
-Requires:	openoffice.org-gtk
-%endif
-%ifarch x86_64
-Requires:	openoffice.org64
-%else
-Requires:	openoffice.org
-%endif
-%endif
-Requires:	orca
-Requires:	pidgin
-Requires:	ristretto
-Requires:	sound-juicer
-Requires:	tomboy
-Requires:	totem
-Requires:	tvtime
-Requires:	qalculate-gtk
-
-# (tpg) some additional xfce software
-Requires:	thunar-archive-plugin
-Requires:	thunar-media-tags-plugin
-Requires:	thunar-svn-plugin
-Requires:	thunar-thumbnailers
+Suggests:	thunar-archive-plugin
+Suggests:	thunar-media-tags-plugin
+Suggests:	thunar-svn-plugin
+Suggests:	thunar-thumbnailers
+Suggests:	xfbib
+Suggests:       xfburn
+Suggests:       xfmedia
+Suggests:	xfmpc
+Requires:       xfprint
+Suggests:       xfce4-artwork
+Suggests:       xfce4-appfinder
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -71,19 +42,12 @@ Obsoletes:	task-xfce-minimal <= 2008-24
 # (tpg) please keep requires in alphabetical order
 
 Requires:       exo
-Requires:       mandriva-xfce-config
+Suggests:	mandriva-xfce-config
 Requires:       mousepad
 Requires:       notification-daemon-xfce
-Requires:       orage
-Requires:       squeeze
 Requires:       terminal
 Requires:       thunar
-# (tpg) disable for now
-#Conflicts:      xarchiver
-Suggests:       xfburn
 Requires:       xfdesktop
-Requires:       xfce4-appfinder
-Suggests:       xfce4-artwork
 Suggests:       xfce4-icon-theme
 Requires:       xfce4-mixer
 Requires:       xfce4-panel
@@ -93,10 +57,7 @@ Requires:	xfce4-volstatus-icon
 Requires:       xfce-mcs-manager
 Requires:       xfce-mcs-plugins
 Requires:       xfce-utils
-Suggests:       xfmedia
-Requires:       xfprint
 Requires:       xfwm4
-Suggests:       xfwm4-themes
 
 Provides:       xfce
 Obsoletes:      xfce
@@ -172,7 +133,7 @@ Summary:	Xfce development metapackage
 Group:		Development/Other
 Obsoletes:	task-xfce-devel <= 2008-24
 
-# (tpg) xfce stuff, please keep in alphabetical order
+# (tpg) please keep requires in alphabetical order
 Requires:	libxfcegui4-devel
 Requires:	libxfce4mcs-devel
 Requires:	libxfce4util-devel
