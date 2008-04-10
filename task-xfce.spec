@@ -41,7 +41,7 @@ Url:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
 # (tpg) please keep requires in alphabetical order
 
 Requires:       exo
-Suggests:	mandriva-xfce-config
+Requires:	mandriva-xfce-config
 Requires:       mousepad
 Requires:       notification-daemon-xfce
 Requires:       terminal
