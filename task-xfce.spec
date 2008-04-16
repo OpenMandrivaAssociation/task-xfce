@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	4.4.2
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -87,7 +87,7 @@ Suggests:	xfce4-battery-plugin
 Suggests:	xfce4-cddrive-plugin
 Suggests:	xfce4-cellmodem-plugin
 Suggests:	xfce4-clipman-plugin
-Suggests:	xfce4-cpu-freq-plugin
+Suggests:	xfce4-cpufreq-plugin
 Suggests:	xfce4-cpugraph-plugin
 Suggests:	xfce4-datetime-plugin
 Suggests:	xfce4-dict-plugin
