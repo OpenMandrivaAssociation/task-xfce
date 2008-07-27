@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	4.4.2
-Release: 	%mkrel 2
+Release: 	%mkrel 3
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -95,6 +95,7 @@ Suggests:	xfce4-diskperf-plugin
 Suggests:	xfce4-eyes-plugin
 Suggests:	xfce4-fsguard-plugin
 Suggests:	xfce4-genmon-plugin
+Suggests:	xfce4-linelight-plugin
 Suggests:	xfce4-mailwatch-plugin
 Suggests:	xfce4-minicmd-plugin
 Suggests:	xfce4-mount-plugin
