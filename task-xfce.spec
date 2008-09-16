@@ -57,6 +57,7 @@ Requires:       xfce-mcs-manager
 Requires:       xfce-mcs-plugins
 Requires:       xfce-utils
 Requires:       xfwm4
+Requires:       aumix
 
 Provides:       xfce
 Obsoletes:      xfce
