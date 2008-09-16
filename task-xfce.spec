@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	4.4.2
-Release: 	%mkrel 3
+Release: 	%mkrel 4
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
