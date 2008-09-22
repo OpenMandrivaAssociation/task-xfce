@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	4.4.2
-Release: 	%mkrel 4
+Release: 	%mkrel 5
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -57,7 +57,11 @@ Requires:       xfce-mcs-manager
 Requires:       xfce-mcs-plugins
 Requires:       xfce-utils
 Requires:       xfwm4
-Requires:       aumix
+
+Suggests:       aumix
+%if %mdkversion >= 200900
+Suggests:	canberra-gtk
+%endif
 
 Provides:       xfce
 Obsoletes:      xfce
