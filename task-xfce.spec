@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	4.4.2
-Release: 	%mkrel 5
+Release: 	%mkrel 6
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -61,6 +61,7 @@ Requires:       xfwm4
 Suggests:       aumix
 %if %mdkversion >= 200900
 Suggests:	canberra-gtk
+Suggests:	preload
 %endif
 
 Provides:       xfce
