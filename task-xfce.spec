@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	4.4.2
-Release: 	%mkrel 7
+Release: 	%mkrel 8
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -17,6 +17,7 @@ Suggests:	ristretto
 Requires:	task-xfce-minimal
 Suggests:	thunar-archive-plugin
 Suggests:	thunar-media-tags-plugin
+Suggests:	thunar-shares
 Suggests:	thunar-svn-plugin
 Suggests:	thunar-thumbnailers
 Suggests:	xfbib
