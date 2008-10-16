@@ -1,6 +1,6 @@
 Name:    	task-xfce
-Version: 	4.4.2
-Release: 	%mkrel 8
+Version: 	4.5.91
+Release: 	%mkrel 0.1
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -54,8 +54,7 @@ Requires:       xfce4-panel
 Requires:       xfce4-session
 Requires:       xfce4-taskmanager
 Requires:	xfce4-volstatus-icon
-Requires:       xfce-mcs-manager
-Requires:       xfce-mcs-plugins
+Requires:       xfce4-settings
 Requires:       xfce-utils
 Requires:       xfwm4
 
@@ -141,12 +140,12 @@ Group:		Development/Other
 
 # (tpg) please keep requires in alphabetical order
 Requires:	libxfcegui4-devel
-Requires:	libxfce4mcs-devel
+Requires:	xfconf-devel
+Requires:	libxfce4menu-devel
 Requires:	libxfce4util-devel
 Requires:	python-xfce
 Requires:	thunar-devel
 Requires:       xfce4-dev-tools
-Requires:	xfce-mcs-manager-devel
 Requires:	xfce4-panel-devel
 Requires:	xfc
 
