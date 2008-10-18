@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	4.5.91
-Release: 	%mkrel 0.1
+Release: 	%mkrel 0.2
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -44,7 +44,6 @@ Url:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
 Requires:       exo
 Requires:	mandriva-xfce-config
 Requires:       mousepad
-Requires:       notification-daemon-xfce
 Requires:       terminal
 Requires:       thunar
 Requires:       xfdesktop
