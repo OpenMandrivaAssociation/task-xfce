@@ -5,7 +5,7 @@ Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
 License: 	GPLv2+
-URL:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
+URL:		http://wiki.mandriva.com/en/XfceLive
 BuildArch:	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
@@ -37,7 +37,7 @@ Xfce panel plugins can be found in %{name}-plugins.
 %package minimal
 Summary: 	Minimal dependencies needed for Xfce desktop
 Group: 		Graphical desktop/Xfce
-Url:		http://wiki.mandriva.com/en/Development/Ideas/XFCE
+Url:		http://wiki.mandriva.com/en/XfceLive
 
 # (tpg) please keep requires in alphabetical order
 
@@ -46,18 +46,20 @@ Requires:	mandriva-xfce-config
 Requires:       mousepad
 Requires:       terminal
 Requires:       thunar
-Requires:       xfdesktop
+Requires:	thunar-volman
 Suggests:       xfce4-icon-theme
 Requires:       xfce4-mixer
 Requires:       xfce4-panel
+Requires:	xfce4-power-manager
 Requires:       xfce4-session
 Requires:       xfce4-taskmanager
 Requires:	xfce4-volstatus-icon
 Requires:       xfce4-settings
 Requires:       xfce-utils
+Requires:	xfconf
+Requires:       xfdesktop
 Requires:       xfwm4
 
-Suggests:       aumix
 %if %mdkversion >= 200900
 Suggests:	canberra-gtk
 Suggests:	preload
@@ -65,7 +67,7 @@ Suggests:	readahead
 %endif
 
 Provides:       xfce
-Obsoletes:      xfce
+Obsoletes:      xfce < 4.5.91
 
 %description minimal
 Xfce is a lightweight desktop environment for various *NIX systems.
@@ -85,6 +87,7 @@ minimal dependencies for running a minimal Xfce desktop environment.
 %package plugins
 Summary:	Metapackage for the Xfce panel plugins
 Group:		Graphical desktop/Xfce
+Url:		http://wiki.mandriva.com/en/XfceLive
 Requires:	task-xfce-minimal
 
 # (tpg) please keep requires in alphabetical order
@@ -136,6 +139,7 @@ dependencies for running the Xfce panel plugins.
 %package devel
 Summary:	Xfce development metapackage
 Group:		Development/Other
+Url:		http://wiki.mandriva.com/en/XfceLive
 
 # (tpg) please keep requires in alphabetical order
 Requires:	libxfcegui4-devel
