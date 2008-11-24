@@ -28,6 +28,8 @@ Requires:       xfprint
 Suggests:       xfce4-artwork
 Suggests:       xfce4-appfinder
 
+Obsoletes:	xfce-trigger-launcher
+
 %description
 This package is a meta-package, meaning that its purpose is to contain
 dependencies for running the Xfce Mandriva Desktop.
@@ -127,6 +129,9 @@ Suggests:	xfce4-wavelan-plugin
 Suggests:	xfce4-weather-plugin
 Suggests:       xfce4-websearch-plugin
 Suggests:	xfce4-wmdock-plugin
+%if %mdkversion > 200900
+Suggests:	xfce4-verve-plugin
+%endif
 Suggests:	xfce4-xfapplet-plugin
 Suggests:	xfce4-xkb-plugin
 Suggests:	xfce4-xmms-plugin
