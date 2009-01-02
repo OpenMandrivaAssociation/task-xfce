@@ -151,7 +151,9 @@ Requires:	libxfcegui4-devel
 Requires:	xfconf-devel
 Requires:	libxfce4menu-devel
 Requires:	libxfce4util-devel
+%if %mdkversion <= 200900
 Requires:	python-xfce
+%endif
 Requires:	thunar-devel
 Requires:       xfce4-dev-tools
 Requires:	xfce4-panel-devel
