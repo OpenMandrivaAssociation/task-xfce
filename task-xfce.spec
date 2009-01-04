@@ -1,6 +1,6 @@
 Name:    	task-xfce
-Version: 	4.5.91
-Release: 	%mkrel 0.4
+Version: 	4.5.92
+Release: 	%mkrel 0.1
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -12,6 +12,7 @@ BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 # (tpg) please keep requires in alphabetical order
 
 Suggests:       orage
+Suggests:	sion
 Suggests:       squeeze
 Suggests:	ristretto
 Requires:	task-xfce-minimal
