@@ -26,8 +26,10 @@ Suggests:       xfburn
 Suggests:       xfmedia
 Suggests:	xfmpc
 Requires:       xfprint
+Suggests:	xfswitch-plugin
 Suggests:       xfce4-artwork
 Suggests:       xfce4-appfinder
+Suggests:	xfce4-screenshooter
 
 Obsoletes:	xfce-trigger-launcher
 
@@ -118,7 +120,6 @@ Suggests:	xfce4-places-plugin
 Suggests:	xfce4-quicklauncher-plugin
 Suggests:	xfce4-radio-plugin
 Suggests:	xfce4-rss-plugin
-Suggests:	xfce4-screenshooter-plugin
 Suggests:	xfce4-sensors-plugin
 Suggests:	xfce4-smartpm-plugin
 Suggests:	xfce4-smartbookmark-plugin
