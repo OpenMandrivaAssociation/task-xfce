@@ -18,7 +18,7 @@ Suggests:	ristretto
 Requires:	task-xfce-minimal
 Suggests:	thunar-archive-plugin
 Suggests:	thunar-media-tags-plugin
-Suggests:	thunar-shares
+Suggests:	thunar-shares-plugin
 Suggests:	thunar-svn-plugin
 Suggests:	thunar-thumbnailers
 Suggests:	xfbib
