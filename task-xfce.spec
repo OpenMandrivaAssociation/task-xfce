@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	4.6.0
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -23,7 +23,6 @@ Suggests:	thunar-svn-plugin
 Suggests:	thunar-thumbnailers
 Suggests:	xfbib
 Suggests:       xfburn
-Suggests:       xfmedia
 Suggests:	xfmpc
 Requires:       xfprint
 Suggests:	xfswitch-plugin
