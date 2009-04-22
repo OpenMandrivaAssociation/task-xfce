@@ -1,6 +1,6 @@
 Name:    	task-xfce
-Version: 	4.6.0
-Release: 	%mkrel 2
+Version: 	4.6.1
+Release: 	%mkrel 1
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -108,7 +108,8 @@ Suggests:	xfce4-diskperf-plugin
 Suggests:	xfce4-eyes-plugin
 Suggests:	xfce4-fsguard-plugin
 Suggests:	xfce4-genmon-plugin
-Suggests:	xfce4-linelight-plugin
+# disable this for now, due to strange dependancies
+#Suggests:	xfce4-linelight-plugin
 Suggests:	xfce4-mailwatch-plugin
 Suggests:	xfce4-minicmd-plugin
 Suggests:	xfce4-mount-plugin
@@ -116,6 +117,7 @@ Suggests:	xfce4-mpc-plugin
 Suggests:	xfce4-netload-plugin
 Suggests:	xfce4-notes-plugin
 Suggests:	xfce4-places-plugin
+Suggests:	xfce4-playercontrol-plugin
 Suggests:	xfce4-quicklauncher-plugin
 Suggests:	xfce4-radio-plugin
 Suggests:	xfce4-rss-plugin
@@ -135,12 +137,10 @@ Suggests:	xfce4-verve-plugin
 %endif
 Suggests:	xfce4-xfapplet-plugin
 Suggests:	xfce4-xkb-plugin
-Suggests:	xfce4-xmms-plugin
 
 %description plugins
 This package is a meta-package, meaning that its purpose is to contain
 dependencies for running the Xfce panel plugins.
-
 
 %package devel
 Summary:	Xfce development metapackage
@@ -152,13 +152,11 @@ Requires:	libxfcegui4-devel
 Requires:	xfconf-devel
 Requires:	libxfce4menu-devel
 Requires:	libxfce4util-devel
-%if %mdkversion <= 200900
 Requires:	python-xfce
-%endif
 Requires:	thunar-devel
 Requires:       xfce4-dev-tools
 Requires:	xfce4-panel-devel
-Requires:	xfc
+#Requires:	xfc
 
 %description devel
 This package is a meta-package, meaning that its purpose is to contain
