@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	4.6.1
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -10,7 +10,7 @@ BuildArch:	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 # (tpg) please keep requires in alphabetical order
-
+Suggests:	gdm
 Suggests:       orage
 Suggests:	gigolo
 Suggests:       squeeze
