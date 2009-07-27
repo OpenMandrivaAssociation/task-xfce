@@ -1,6 +1,6 @@
 Name:    	task-xfce
 Version: 	4.6.1
-Release: 	%mkrel 2
+Release: 	%mkrel 3
 Epoch:		1
 Summary: 	Metapackage for the Xfce desktop environment
 Group:   	Graphical desktop/Xfce
@@ -15,6 +15,7 @@ Suggests:       orage
 Suggests:	gigolo
 Suggests:       squeeze
 Suggests:	ristretto
+Suggests:	task-xfce-plugins
 Requires:	task-xfce-minimal
 Suggests:	thunar-archive-plugin
 Suggests:	thunar-media-tags-plugin
