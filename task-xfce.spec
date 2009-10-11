@@ -1,19 +1,20 @@
-Name:    	task-xfce
-Version: 	4.6.1
-Release: 	%mkrel 3
+Summary:	Metapackage for the Xfce desktop environment
+Name:		task-xfce
+Version:	4.6.1
+Release:	%mkrel 4
 Epoch:		1
-Summary: 	Metapackage for the Xfce desktop environment
-Group:   	Graphical desktop/Xfce
-License: 	GPLv2+
+Group:		Graphical desktop/Xfce
+License:	GPLv2+
 URL:		http://wiki.mandriva.com/en/XfceLive
 BuildArch:	noarch
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 # (tpg) please keep requires in alphabetical order
 Suggests:	gdm
-Suggests:       orage
+Suggests:	orage
 Suggests:	gigolo
-Suggests:       squeeze
+Suggests:	parole
+Suggests:	squeeze
 Suggests:	ristretto
 Suggests:	task-xfce-plugins
 Requires:	task-xfce-minimal
@@ -23,14 +24,13 @@ Suggests:	thunar-shares-plugin
 Suggests:	thunar-svn-plugin
 Suggests:	thunar-thumbnailers
 Suggests:	xfbib
-Suggests:       xfburn
+Suggests:	xfburn
 Suggests:	xfmpc
-Requires:       xfprint
+Requires:	xfprint
 Suggests:	xfswitch-plugin
-Suggests:       xfce4-artwork
-Suggests:       xfce4-appfinder
+Suggests:	xfce4-artwork
+Suggests:	xfce4-appfinder
 Suggests:	xfce4-screenshooter
-
 Obsoletes:	xfce-trigger-launcher
 
 %description
@@ -40,30 +40,30 @@ dependencies for running the Xfce Mandriva Desktop.
 Xfce panel plugins can be found in %{name}-plugins.
 
 %package minimal
-Summary: 	Minimal dependencies needed for Xfce desktop
-Group: 		Graphical desktop/Xfce
+Summary:	Minimal dependencies needed for Xfce desktop
+Group:		Graphical desktop/Xfce
 Url:		http://wiki.mandriva.com/en/XfceLive
 
 # (tpg) please keep requires in alphabetical order
 
-Requires:       exo
+Requires:	exo
 Requires:	mandriva-xfce-config
-Requires:       mousepad
-Requires:       terminal
-Requires:       thunar
+Requires:	mousepad
+Requires:	terminal
+Requires:	thunar
 Requires:	thunar-volman
-Suggests:       xfce4-icon-theme
-Requires:       xfce4-mixer
-Requires:       xfce4-panel
+Suggests:	xfce4-icon-theme
+Requires:	xfce4-mixer
+Requires:	xfce4-panel
 Requires:	xfce4-power-manager
-Requires:       xfce4-session
-Requires:       xfce4-taskmanager
+Requires:	xfce4-session
+Requires:	xfce4-taskmanager
 Requires:	xfce4-volstatus-icon
-Requires:       xfce4-settings
-Requires:       xfce-utils
+Requires:	xfce4-settings
+Requires:	xfce-utils
 Requires:	xfconf
-Requires:       xfdesktop
-Requires:       xfwm4
+Requires:	xfdesktop
+Requires:	xfwm4
 
 %if %mdkversion >= 200900
 Suggests:	canberra-gtk
@@ -71,8 +71,8 @@ Suggests:	preload
 Suggests:	readahead
 %endif
 
-Provides:       xfce
-Obsoletes:      xfce < 4.5.91
+Provides:	xfce
+Obsoletes:	xfce < 4.5.91
 
 %description minimal
 Xfce is a lightweight desktop environment for various *NIX systems.
@@ -128,14 +128,13 @@ Suggests:	xfce4-smartbookmark-plugin
 Suggests:	xfce4-systemload-plugin
 Suggests:	xfce4-time-out-plugin
 Suggests:	xfce4-timer-plugin
-Suggests:	xfce4-verve-plugin
-Suggests:	xfce4-wavelan-plugin
-Suggests:	xfce4-weather-plugin
-Suggests:       xfce4-websearch-plugin
-Suggests:	xfce4-wmdock-plugin
 %if %mdkversion > 200900
 Suggests:	xfce4-verve-plugin
 %endif
+Suggests:	xfce4-wavelan-plugin
+Suggests:	xfce4-weather-plugin
+Suggests:	xfce4-websearch-plugin
+Suggests:	xfce4-wmdock-plugin
 Suggests:	xfce4-xfapplet-plugin
 Suggests:	xfce4-xkb-plugin
 
@@ -150,13 +149,13 @@ Url:		http://wiki.mandriva.com/en/XfceLive
 
 # (tpg) please keep requires in alphabetical order
 Requires:	libxfcegui4-devel
-Requires:	xfconf-devel
 Requires:	libxfce4menu-devel
 Requires:	libxfce4util-devel
 Requires:	python-xfce
 Requires:	thunar-devel
-Requires:       xfce4-dev-tools
+Requires:	xfce4-dev-tools
 Requires:	xfce4-panel-devel
+Requires:	xfconf-devel
 #Requires:	xfc
 
 %description devel
