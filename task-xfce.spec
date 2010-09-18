@@ -1,7 +1,7 @@
 Summary:	Metapackage for the Xfce desktop environment
 Name:		task-xfce
-Version:	4.6.1
-Release:	%mkrel 4
+Version:	2011.0
+Release:	%mkrel 1
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
@@ -11,18 +11,20 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 # (tpg) please keep requires in alphabetical order
 Suggests:	gdm
-Suggests:	orage
+#Suggests:	orage
 Suggests:	gigolo
 Suggests:	parole
-Suggests:	squeeze
+#Suggests:	squeeze
+Suggests:	xarchiver
 Suggests:	ristretto
-Suggests:	task-xfce-plugins
+#Suggests:	task-xfce-plugins
 Requires:	task-xfce-minimal
-Suggests:	thunar-archive-plugin
-Suggests:	thunar-media-tags-plugin
-Suggests:	thunar-shares-plugin
-Suggests:	thunar-svn-plugin
-Suggests:	thunar-thumbnailers
+#Suggests:	thunar-archive-plugin
+#Suggests:	thunar-media-tags-plugin
+#Suggests:	thunar-shares-plugin
+#Suggests:	thunar-svn-plugin
+#Suggests:	thunar-thumbnailers
+Suggests:	tumbler
 Suggests:	xfbib
 Suggests:	xfburn
 Suggests:	xfmpc
@@ -58,7 +60,7 @@ Requires:	xfce4-panel
 Requires:	xfce4-power-manager
 Requires:	xfce4-session
 Requires:	xfce4-taskmanager
-Requires:	xfce4-volstatus-icon
+#Requires:	xfce4-volstatus-icon
 Requires:	xfce4-settings
 Requires:	xfce-utils
 Requires:	xfconf
@@ -149,6 +151,8 @@ Url:		http://wiki.mandriva.com/en/XfceLive
 
 # (tpg) please keep requires in alphabetical order
 Requires:	libxfcegui4-devel
+Requires:	libxfce4ui-devel
+Requires:	garcon-devel
 Requires:	libxfce4menu-devel
 Requires:	libxfce4util-devel
 Requires:	python-xfce
@@ -156,6 +160,7 @@ Requires:	thunar-devel
 Requires:	xfce4-dev-tools
 Requires:	xfce4-panel-devel
 Requires:	xfconf-devel
+Requires:	exo-devel
 #Requires:	xfc
 
 %description devel
