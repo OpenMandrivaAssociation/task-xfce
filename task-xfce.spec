@@ -1,7 +1,7 @@
 Summary:	Metapackage for the Xfce desktop environment
 Name:		task-xfce
 Version:	2011.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
@@ -11,7 +11,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 # (tpg) please keep requires in alphabetical order
 Suggests:	gdm
-#Suggests:	orage
+Suggests:	orage
 Suggests:	gigolo
 Suggests:	parole
 #Suggests:	squeeze
@@ -19,7 +19,7 @@ Suggests:	xarchiver
 Suggests:	ristretto
 #Suggests:	task-xfce-plugins
 Requires:	task-xfce-minimal
-#Suggests:	thunar-archive-plugin
+Suggests:	thunar-archive-plugin
 #Suggests:	thunar-media-tags-plugin
 #Suggests:	thunar-shares-plugin
 #Suggests:	thunar-svn-plugin
@@ -100,45 +100,45 @@ Requires:	task-xfce-minimal
 # (tpg) please keep requires in alphabetical order
 
 Suggests:	xfce4-battery-plugin
-Suggests:	xfce4-cddrive-plugin
-Suggests:	xfce4-cellmodem-plugin
-Suggests:	xfce4-clipman-plugin
+#Suggests:	xfce4-cddrive-plugin
+#Suggests:	xfce4-cellmodem-plugin
+#Suggests:	xfce4-clipman-plugin
 Suggests:	xfce4-cpufreq-plugin
 Suggests:	xfce4-cpugraph-plugin
-Suggests:	xfce4-datetime-plugin
-Suggests:	xfce4-dict-plugin
+#Suggests:	xfce4-datetime-plugin
+#Suggests:	xfce4-dict-plugin
 Suggests:	xfce4-diskperf-plugin
 Suggests:	xfce4-eyes-plugin
 Suggests:	xfce4-fsguard-plugin
-Suggests:	xfce4-genmon-plugin
+#Suggests:	xfce4-genmon-plugin
 # disable this for now, due to strange dependancies
 #Suggests:	xfce4-linelight-plugin
-Suggests:	xfce4-mailwatch-plugin
-Suggests:	xfce4-minicmd-plugin
-Suggests:	xfce4-mount-plugin
-Suggests:	xfce4-mpc-plugin
+#Suggests:	xfce4-mailwatch-plugin
+#Suggests:	xfce4-minicmd-plugin
+#Suggests:	xfce4-mount-plugin
+#Suggests:	xfce4-mpc-plugin
 Suggests:	xfce4-netload-plugin
-Suggests:	xfce4-notes-plugin
-Suggests:	xfce4-places-plugin
-Suggests:	xfce4-playercontrol-plugin
-Suggests:	xfce4-quicklauncher-plugin
-Suggests:	xfce4-radio-plugin
-Suggests:	xfce4-rss-plugin
-Suggests:	xfce4-sensors-plugin
-Suggests:	xfce4-smartpm-plugin
-Suggests:	xfce4-smartbookmark-plugin
+#Suggests:	xfce4-notes-plugin
+#Suggests:	xfce4-places-plugin
+#Suggests:	xfce4-playercontrol-plugin
+#Suggests:	xfce4-quicklauncher-plugin
+#Suggests:	xfce4-radio-plugin
+#Suggests:	xfce4-rss-plugin
+#Suggests:	xfce4-sensors-plugin
+#Suggests:	xfce4-smartpm-plugin
+#Suggests:	xfce4-smartbookmark-plugin
 Suggests:	xfce4-systemload-plugin
 Suggests:	xfce4-time-out-plugin
-Suggests:	xfce4-timer-plugin
+#Suggests:	xfce4-timer-plugin
 %if %mdkversion > 200900
 Suggests:	xfce4-verve-plugin
 %endif
 Suggests:	xfce4-wavelan-plugin
-Suggests:	xfce4-weather-plugin
-Suggests:	xfce4-websearch-plugin
-Suggests:	xfce4-wmdock-plugin
-Suggests:	xfce4-xfapplet-plugin
-Suggests:	xfce4-xkb-plugin
+#Suggests:	xfce4-weather-plugin
+#Suggests:	xfce4-websearch-plugin
+#Suggests:	xfce4-wmdock-plugin
+#Suggests:	xfce4-xfapplet-plugin
+#Suggests:	xfce4-xkb-plugin
 
 %description plugins
 This package is a meta-package, meaning that its purpose is to contain
@@ -153,7 +153,7 @@ Url:		http://wiki.mandriva.com/en/XfceLive
 Requires:	libxfcegui4-devel
 Requires:	libxfce4ui-devel
 Requires:	garcon-devel
-Requires:	libxfce4menu-devel
+#Requires:	libxfce4menu-devel
 Requires:	libxfce4util-devel
 Requires:	python-xfce
 Requires:	thunar-devel
