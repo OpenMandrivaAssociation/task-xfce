@@ -116,13 +116,13 @@ Suggests:	xfce4-fsguard-plugin
 #Suggests:	xfce4-mailwatch-plugin
 #Suggests:	xfce4-minicmd-plugin
 #Suggests:	xfce4-mount-plugin
-#Suggests:	xfce4-mpc-plugin
+Suggests:	xfce4-mpc-plugin
 Suggests:	xfce4-netload-plugin
 #Suggests:	xfce4-notes-plugin
 #Suggests:	xfce4-places-plugin
 #Suggests:	xfce4-playercontrol-plugin
 #Suggests:	xfce4-quicklauncher-plugin
-#Suggests:	xfce4-radio-plugin
+Suggests:	xfce4-radio-plugin
 #Suggests:	xfce4-rss-plugin
 #Suggests:	xfce4-sensors-plugin
 #Suggests:	xfce4-smartpm-plugin
@@ -134,7 +134,7 @@ Suggests:	xfce4-time-out-plugin
 Suggests:	xfce4-verve-plugin
 %endif
 Suggests:	xfce4-wavelan-plugin
-#Suggests:	xfce4-weather-plugin
+Suggests:	xfce4-weather-plugin
 #Suggests:	xfce4-websearch-plugin
 #Suggests:	xfce4-wmdock-plugin
 #Suggests:	xfce4-xfapplet-plugin
