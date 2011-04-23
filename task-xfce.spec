@@ -124,7 +124,7 @@ Suggests:	xfce4-netload-plugin
 #Suggests:	xfce4-quicklauncher-plugin
 Suggests:	xfce4-radio-plugin
 #Suggests:	xfce4-rss-plugin
-#Suggests:	xfce4-sensors-plugin
+Suggests:	xfce4-sensors-plugin
 #Suggests:	xfce4-smartpm-plugin
 #Suggests:	xfce4-smartbookmark-plugin
 Suggests:	xfce4-systemload-plugin
