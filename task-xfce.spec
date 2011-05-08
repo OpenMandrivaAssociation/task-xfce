@@ -110,7 +110,7 @@ Suggests:	xfce4-cpugraph-plugin
 Suggests:	xfce4-diskperf-plugin
 Suggests:	xfce4-eyes-plugin
 Suggests:	xfce4-fsguard-plugin
-#Suggests:	xfce4-genmon-plugin
+Suggests:	xfce4-genmon-plugin
 # disable this for now, due to strange dependancies
 #Suggests:	xfce4-linelight-plugin
 #Suggests:	xfce4-mailwatch-plugin
@@ -136,7 +136,7 @@ Suggests:	xfce4-verve-plugin
 Suggests:	xfce4-wavelan-plugin
 Suggests:	xfce4-weather-plugin
 #Suggests:	xfce4-websearch-plugin
-#Suggests:	xfce4-wmdock-plugin
+Suggests:	xfce4-wmdock-plugin
 #Suggests:	xfce4-xfapplet-plugin
 Suggests:	xfce4-xkb-plugin
 
