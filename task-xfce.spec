@@ -138,7 +138,7 @@ Suggests:	xfce4-weather-plugin
 #Suggests:	xfce4-websearch-plugin
 #Suggests:	xfce4-wmdock-plugin
 #Suggests:	xfce4-xfapplet-plugin
-#Suggests:	xfce4-xkb-plugin
+Suggests:	xfce4-xkb-plugin
 
 %description plugins
 This package is a meta-package, meaning that its purpose is to contain
