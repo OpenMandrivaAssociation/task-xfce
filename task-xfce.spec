@@ -119,7 +119,7 @@ Suggests:	xfce4-genmon-plugin
 Suggests:	xfce4-mpc-plugin
 Suggests:	xfce4-netload-plugin
 #Suggests:	xfce4-notes-plugin
-#Suggests:	xfce4-places-plugin
+Suggests:	xfce4-places-plugin
 #Suggests:	xfce4-playercontrol-plugin
 #Suggests:	xfce4-quicklauncher-plugin
 Suggests:	xfce4-radio-plugin
@@ -129,7 +129,7 @@ Suggests:	xfce4-sensors-plugin
 #Suggests:	xfce4-smartbookmark-plugin
 Suggests:	xfce4-systemload-plugin
 Suggests:	xfce4-time-out-plugin
-#Suggests:	xfce4-timer-plugin
+Suggests:	xfce4-timer-plugin
 %if %mdkversion > 200900
 Suggests:	xfce4-verve-plugin
 %endif
