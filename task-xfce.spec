@@ -15,12 +15,12 @@ Suggests:	gdm
 #Suggests:	gigolo
 #Suggests:	parole
 #Suggests:	squeeze
-#Suggests:	xarchiver
+Suggests:	xarchiver
 Suggests:	ristretto
 #Suggests:	task-xfce-plugins
 Requires:	task-xfce-minimal
 #Suggests:	thunar-archive-plugin
-#Suggests:	thunar-media-tags-plugin
+Suggests:	thunar-media-tags-plugin
 #Suggests:	thunar-shares-plugin
 #Suggests:	thunar-svn-plugin
 #Suggests:	thunar-thumbnailers
@@ -31,8 +31,8 @@ Suggests:	tumbler
 #Requires:	xfprint
 #Suggests:	xfswitch-plugin
 #Suggests:	xfce4-artwork
-#Suggests:	xfce4-appfinder
-#Suggests:	xfce4-screenshooter
+Suggests:	xfce4-appfinder
+Suggests:	xfce4-screenshooter
 Obsoletes:	xfce-trigger-launcher
 
 %description
@@ -59,8 +59,8 @@ Requires:	xfce4-mixer
 Requires:	xfce4-panel
 Requires:	xfce4-power-manager
 Requires:	xfce4-session
-#Requires:	xfce4-taskmanager
-#Requires:	xfce4-volstatus-icon
+Requires:	xfce4-taskmanager
+Requires:	xfce4-volstatus-icon
 Requires:	xfce4-settings
 #Requires:	xfce-utils
 Conflicts:	xfce-utils <= 4.8.3-1
@@ -108,7 +108,7 @@ Requires:	task-xfce-minimal
 #Suggests:	xfce4-cpugraph-plugin
 #Suggests:	xfce4-datetime-plugin
 #Suggests:	xfce4-dict-plugin
-#Suggests:	xfce4-diskperf-plugin
+Suggests:	xfce4-diskperf-plugin
 #Suggests:	xfce4-eyes-plugin
 #Suggests:	xfce4-fsguard-plugin
 #Suggests:	xfce4-genmon-plugin
@@ -125,7 +125,7 @@ Requires:	task-xfce-minimal
 #Suggests:	xfce4-quicklauncher-plugin
 #Suggests:	xfce4-radio-plugin
 #Suggests:	xfce4-rss-plugin
-#Suggests:	xfce4-sensors-plugin
+Suggests:	xfce4-sensors-plugin
 #Suggests:	xfce4-smartpm-plugin
 #Suggests:	xfce4-smartbookmark-plugin
 #Suggests:	xfce4-systemload-plugin
