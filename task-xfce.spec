@@ -1,7 +1,7 @@
 Summary:	Metapackage for the Xfce desktop environment
 Name:		task-xfce
 Version:	2011.0
-Release:	6
+Release:	7
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
@@ -59,7 +59,6 @@ Requires:	xfce4-panel
 Requires:	xfce4-power-manager
 Requires:	xfce4-session
 Requires:	xfce4-taskmanager
-Requires:	xfce4-volstatus-icon
 Requires:	xfce4-settings
 Conflicts:	xfce-utils <= 4.8.3-1
 Requires:	xfconf
