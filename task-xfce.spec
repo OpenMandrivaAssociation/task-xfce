@@ -1,6 +1,6 @@
 Summary:	Metapackage for the Xfce desktop environment
 Name:		task-xfce
-Version:	2012.0
+Version:	2013.0
 Release:	2
 Epoch:		1
 Group:		Graphical desktop/Xfce
