@@ -1,7 +1,7 @@
 Summary:	Metapackage for the Xfce desktop environment
 Name:		task-xfce
 Version:	2013.0
-Release:	1
+Release:	2
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
@@ -9,14 +9,14 @@ URL:		http://wiki.mandriva.com/en/XfceLive
 BuildArch:	noarch
 
 # (tpg) please keep requires in alphabetical order
-#Suggests:	eatmonkey
+Suggests:	eatmonkey
 Suggests:	lightdm
 Suggests:	orage
 Suggests:	gigolo
-#Suggests:	midori
+Suggests:	midori
 Suggests:	parole
-Suggests:	squeeze
-#Suggests:	xarchiver
+#Suggests:	squeeze
+Suggests:	xarchiver
 Suggests:	ristretto
 Requires:	task-xfce-plugins
 Requires:	task-xfce-minimal
@@ -24,7 +24,7 @@ Suggests:	thunar-archive-plugin
 Suggests:	thunar-media-tags-plugin
 Suggests:	thunar-shares-plugin
 #Suggests:	thunar-svn-plugin
-Suggests:	thunar-vcs-plugin
+#Suggests:	thunar-vcs-plugin
 Suggests:	thunar-thumbnailers
 Suggests:	tumbler
 Suggests:	xfbib
@@ -51,7 +51,7 @@ Url:		http://wiki.mandriva.com/en/XfceLive
 # (tpg) please keep requires in alphabetical order
 
 Requires:	exo
-#Requires:	mandriva-xfce-config
+Requires:	mandriva-xfce-config
 Requires:	mousepad
 Requires:	terminal
 Requires:	thunar
@@ -104,11 +104,11 @@ Suggests:	xfce4-cpugraph-plugin
 Suggests:	xfce4-datetime-plugin
 Suggests:	xfce4-dict-plugin
 Suggests:	xfce4-diskperf-plugin
-Suggests:	xfce4-embed-plugin
+#Suggests:	xfce4-embed-plugin
 Suggests:	xfce4-eyes-plugin
 Suggests:	xfce4-fsguard-plugin
 Suggests:	xfce4-genmon-plugin
-Suggests:	xfce4-indicator-plugin
+#Suggests:	xfce4-indicator-plugin
 #Suggests:	xfce4-linelight-plugin
 Suggests:	xfce4-modemlights-plugin
 #Suggests:	xfce4-mailwatch-plugin
