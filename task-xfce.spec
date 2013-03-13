@@ -1,7 +1,7 @@
 Summary:	Metapackage for the Xfce desktop environment
 Name:		task-xfce
 Version:	2013.0
-Release:	2
+Release:	3
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
@@ -10,7 +10,7 @@ BuildArch:	noarch
 
 # (tpg) please keep requires in alphabetical order
 Suggests:	eatmonkey
-Suggests:	lightdm
+Suggests:	slim
 Suggests:	orage
 Suggests:	gigolo
 Suggests:	midori
@@ -53,7 +53,7 @@ Url:		http://wiki.mandriva.com/en/XfceLive
 Requires:	exo
 Requires:	mandriva-xfce-config
 Requires:	mousepad
-Requires:	terminal
+Requires:	xfce4-terminal
 Requires:	thunar
 Requires:	thunar-volman
 Suggests:	xfce4-icon-theme
