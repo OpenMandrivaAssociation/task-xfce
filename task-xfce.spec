@@ -151,7 +151,7 @@ Url:		http://wiki.mandriva.com/en/XfceLive
 # (tpg) please keep requires in alphabetical order
 #Requires:	libxfcegui4-devel
 Requires:	libxfce4ui-devel
-Requires:	garcon-devel
+Requires:	libgarcon-devel
 #Requires:	libxfce4menu-devel
 Requires:	libxfce4util-devel
 #Requires:	python-xfce
