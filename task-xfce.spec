@@ -51,7 +51,7 @@ Url:		%{disturl}
 # (tpg) please keep requires in alphabetical order
 
 Requires:	exo
-Requires:	distro-xfce-config
+Requires:	distro-xfce-config-OpenMandriva
 Requires:	mousepad
 Requires:	xfce4-terminal
 Requires:	thunar
