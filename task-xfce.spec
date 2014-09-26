@@ -5,7 +5,7 @@ Release:	1
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
-URL:		http://wiki.mandriva.com/en/XfceLive
+URL:		%{disturl}
 BuildArch:	noarch
 
 # (tpg) please keep requires in alphabetical order
@@ -46,7 +46,7 @@ Xfce panel plugins can be found in %{name}-plugins.
 %package minimal
 Summary:	Minimal dependencies needed for Xfce desktop
 Group:		Graphical desktop/Xfce
-Url:		http://wiki.mandriva.com/en/XfceLive
+Url:		%{disturl}
 
 # (tpg) please keep requires in alphabetical order
 
@@ -90,7 +90,7 @@ minimal dependencies for running a minimal Xfce desktop environment.
 %package plugins
 Summary:	Metapackage for the Xfce panel plugins
 Group:		Graphical desktop/Xfce
-Url:		http://wiki.mandriva.com/en/XfceLive
+Url:		%{disturl}
 Requires:	task-xfce-minimal
 
 # (tpg) please keep requires in alphabetical order
@@ -146,7 +146,7 @@ dependencies for running the Xfce panel plugins.
 %package devel
 Summary:	Xfce development metapackage
 Group:		Development/Other
-Url:		http://wiki.mandriva.com/en/XfceLive
+Url:		%{disturl}
 
 # (tpg) please keep requires in alphabetical order
 #Requires:	libxfcegui4-devel
