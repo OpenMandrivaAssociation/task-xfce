@@ -3,7 +3,7 @@ Name:		task-xfce
 Version:	2015.0
 Release:	2
 Epoch:		1
-Group:		Graphical desktop/xfce
+Group:		Graphical desktop/Xfce
 License:	GPLv2+
 URL:		%{disturl}
 BuildArch:	noarch
@@ -45,7 +45,7 @@ xfce panel plugins can be found in %{name}-plugins.
 
 %package minimal
 Summary:	Minimal dependencies needed for xfce desktop
-Group:		Graphical desktop/xfce
+Group:		Graphical desktop/Xfce
 Url:		%{disturl}
 
 # (tpg) please keep requires in alphabetical order
@@ -89,7 +89,7 @@ minimal dependencies for running a minimal xfce desktop environment.
 
 %package plugins
 Summary:	Metapackage for the xfce panel plugins
-Group:		Graphical desktop/xfce
+Group:		Graphical desktop/Xfce
 Url:		%{disturl}
 Requires:	task-xfce-minimal
 
