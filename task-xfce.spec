@@ -1,7 +1,7 @@
 Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
 Version:	2014.0
-Release:	2
+Release:	3
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
@@ -51,7 +51,7 @@ Url:		%{disturl}
 # (tpg) please keep requires in alphabetical order
 
 Requires:	exo
-Requires:	distro-xfce-config
+Requires:	distro-xfce-config-OpenMandriva
 Requires:	mousepad
 Requires:	xfce4-terminal
 Requires:	thunar
