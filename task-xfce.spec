@@ -1,11 +1,11 @@
-Summary:	Metapackage for the Xfce desktop environment
+Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
 Version:	2014.0
-Release:	1
+Release:	2
 Epoch:		1
-Group:		Graphical desktop/Xfce
+Group:		Graphical desktop/xfce
 License:	GPLv2+
-URL:		http://wiki.mandriva.com/en/XfceLive
+URL:		%{disturl}
 BuildArch:	noarch
 
 # (tpg) please keep requires in alphabetical order
@@ -39,19 +39,19 @@ Obsoletes:	xfce-trigger-launcher
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
-dependencies for running the Xfce Mandriva Desktop.
+dependencies for running the xfce %{distribution} esktop.
 
-Xfce panel plugins can be found in %{name}-plugins.
+xfce panel plugins can be found in %{name}-plugins.
 
 %package minimal
-Summary:	Minimal dependencies needed for Xfce desktop
-Group:		Graphical desktop/Xfce
-Url:		http://wiki.mandriva.com/en/XfceLive
+Summary:	Minimal dependencies needed for xfce desktop
+Group:		Graphical desktop/xfce
+Url:		%{disturl}
 
 # (tpg) please keep requires in alphabetical order
 
 Requires:	exo
-Requires:	mandriva-xfce-config
+Requires:	distro-xfce-config
 Requires:	mousepad
 Requires:	xfce4-terminal
 Requires:	thunar
@@ -73,24 +73,24 @@ Requires:	xfwm4
 Provides:	xfce = %{EVRD}
 
 %description minimal
-Xfce is a lightweight desktop environment for various *NIX systems.
+xfce is a lightweight desktop environment for various *NIX systems.
 Designed for productivity, it loads and executes applications fast,
 while conserving system resources.
 
-Xfce 4.4 embodies the traditional UNIX philosophy of modularity and
+xfce 4.4 embodies the traditional UNIX philosophy of modularity and
 re-usability. It consists of a number of components that together
 provide the full functionality of the desktop environment. They are
 packaged separately and you can pick and choose from the available
 packages to create the best personal working environment.
 
 This package is a meta-package, meaning that its purpose is to contain
-minimal dependencies for running a minimal Xfce desktop environment.
+minimal dependencies for running a minimal xfce desktop environment.
 
 
 %package plugins
-Summary:	Metapackage for the Xfce panel plugins
-Group:		Graphical desktop/Xfce
-Url:		http://wiki.mandriva.com/en/XfceLive
+Summary:	Metapackage for the xfce panel plugins
+Group:		Graphical desktop/xfce
+Url:		%{disturl}
 Requires:	task-xfce-minimal
 
 # (tpg) please keep requires in alphabetical order
@@ -141,12 +141,12 @@ Suggests:	xfce4-xkb-plugin
 
 %description plugins
 This package is a meta-package, meaning that its purpose is to contain
-dependencies for running the Xfce panel plugins.
+dependencies for running the xfce panel plugins.
 
 %package devel
-Summary:	Xfce development metapackage
+Summary:	xfce development metapackage
 Group:		Development/Other
-Url:		http://wiki.mandriva.com/en/XfceLive
+Url:		%{disturl}
 
 # (tpg) please keep requires in alphabetical order
 #Requires:	libxfcegui4-devel
@@ -164,7 +164,7 @@ Requires:	exo-devel
 
 %description devel
 This package is a meta-package, meaning that its purpose is to contain
-dependencies for Xfce development environment.
+dependencies for xfce development environment.
 
 %files
 
