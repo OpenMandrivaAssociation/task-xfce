@@ -1,7 +1,7 @@
 Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
 Version:	2014.0
-Release:	4
+Release:	4.1
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
@@ -14,6 +14,7 @@ Suggests:	slim
 Suggests:	orage
 Suggests:	gigolo
 Suggests:	midori
+Requires:	gnome-keyring
 Suggests:	parole
 #Suggests:	squeeze
 Suggests:	xarchiver
