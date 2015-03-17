@@ -1,7 +1,7 @@
 Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
 Version:	2015.0
-Release:	5
+Release:	6
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
@@ -58,7 +58,7 @@ Requires:	xfce4-terminal
 Requires:	thunar
 Requires:	thunar-volman
 Suggests:	xfce4-icon-theme
-Requires:	xfce4-mixer
+Requires:	xfce4-pulseaudio-plugin
 Requires:	virtual-notification-daemon
 Suggests:	xfce4-notifyd
 Requires:	xfce4-panel
