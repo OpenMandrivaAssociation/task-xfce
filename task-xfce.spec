@@ -66,7 +66,6 @@ Requires:	xfce4-power-manager
 Requires:	xfce4-session
 Requires:	xfce4-taskmanager
 Requires:	xfce4-settings
-Requires:	xfce4-volumed
 Requires:	xfconf
 Requires:	xfdesktop
 Requires:	xfwm4
