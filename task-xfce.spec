@@ -1,7 +1,7 @@
 Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
 Version:	2014.0
-Release:	4.1
+Release:	4.2
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
@@ -58,7 +58,7 @@ Requires:	xfce4-terminal
 Requires:	thunar
 Requires:	thunar-volman
 Suggests:	xfce4-icon-theme
-Requires:	xfce4-mixer
+Requires:	xfce4-pulseaudio-plugin
 Requires:	virtual-notification-daemon
 Suggests:	xfce4-notifyd
 Requires:	xfce4-panel
@@ -66,7 +66,6 @@ Requires:	xfce4-power-manager
 Requires:	xfce4-session
 Requires:	xfce4-taskmanager
 Requires:	xfce4-settings
-Requires:	xfce4-volumed
 Requires:	xfconf
 Requires:	xfdesktop
 Requires:	xfwm4
@@ -134,7 +133,6 @@ Suggests:	xfce4-verve-plugin
 Suggests:	xfce4-wavelan-plugin
 Suggests:	xfce4-weather-plugin
 #Suggests:	xfce4-websearch-plugin
-Suggests:	xfce4-wmdock-plugin
 #Suggests:	xfce4-xfapplet-plugin
 Suggests:	xfce4-xkb-plugin
 # requires gdm
