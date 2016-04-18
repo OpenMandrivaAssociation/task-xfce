@@ -1,7 +1,7 @@
 Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
 Version:	2015.0
-Release:	7
+Release:	8
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
@@ -133,7 +133,6 @@ Suggests:	xfce4-verve-plugin
 Suggests:	xfce4-wavelan-plugin
 Suggests:	xfce4-weather-plugin
 #Suggests:	xfce4-websearch-plugin
-Suggests:	xfce4-wmdock-plugin
 #Suggests:	xfce4-xfapplet-plugin
 Suggests:	xfce4-xkb-plugin
 # requires gdm
