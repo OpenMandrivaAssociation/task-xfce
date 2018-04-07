@@ -1,7 +1,7 @@
 Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
 Version:	2015.0
-Release:	8
+Release:	10
 Epoch:		1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
@@ -16,7 +16,6 @@ Suggests:	gigolo
 Suggests:	midori
 Requires:	gnome-keyring
 Suggests:	parole
-#Suggests:	squeeze
 Suggests:	xarchiver
 Suggests:	ristretto
 Requires:	task-xfce-plugins
@@ -32,7 +31,6 @@ Suggests:	xfbib
 Suggests:	xfburn
 Suggests:	xfmpc
 #Requires:	xfprint
-#Suggests:	xfswitch-plugin
 #Suggests:	xfce4-artwork
 Suggests:	xfce4-appfinder
 Suggests:	xfce4-screenshooter
@@ -96,8 +94,9 @@ Requires:	task-xfce-minimal
 # (tpg) please keep requires in alphabetical order
 
 Suggests:	xfce4-battery-plugin
+Suggests:	xfce4-calculator-plugin
 #Suggests:	xfce4-cddrive-plugin
-Suggests:	xfce4-cellmodem-plugin
+#Suggests:	xfce4-cellmodem-plugin
 Suggests:	xfce4-clipman-plugin
 Suggests:	xfce4-cpufreq-plugin
 Suggests:	xfce4-cpugraph-plugin
@@ -110,7 +109,7 @@ Suggests:	xfce4-fsguard-plugin
 Suggests:	xfce4-genmon-plugin
 #Suggests:	xfce4-indicator-plugin
 #Suggests:	xfce4-linelight-plugin
-Suggests:	xfce4-modemlights-plugin
+#Suggests:	xfce4-modemlights-plugin
 #Suggests:	xfce4-mailwatch-plugin
 #Suggests:	xfce4-minicmd-plugin
 Suggests:	xfce4-mount-plugin
@@ -125,7 +124,8 @@ Suggests:	xfce4-radio-plugin
 Suggests:	xfce4-screenshooter-plugin
 Suggests:	xfce4-sensors-plugin
 Suggests:	xfce4-smartbookmark-plugin
-Suggests:	xfce4-smartpm-plugin
+#Suggests:	xfce4-smartpm-plugin
+Suggests:	xfce4-statusnotifier-plugin
 Suggests:	xfce4-systemload-plugin
 Suggests:	xfce4-time-out-plugin
 Suggests:	xfce4-timer-plugin
