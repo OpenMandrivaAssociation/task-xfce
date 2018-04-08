@@ -1,8 +1,8 @@
 Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
-Version:	2015.0
-Release:	10
-Epoch:		1
+Version:	3.0
+Release:	1
+Epoch:		2
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
 URL:		%{disturl}
