@@ -9,7 +9,7 @@ URL:		%{disturl}
 BuildArch:	noarch
 
 # (tpg) please keep requires in alphabetical order
-Suggests:	eatmonkey
+Recommends:	eatmonkey
 Recommends:	ristretto
 Recommends:	thunar-archive-plugin
 Recommends:	xfmpc
