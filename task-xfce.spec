@@ -57,8 +57,14 @@ Requires:	distro-xfce-config-OpenMandriva
 Requires:	mousepad
 Requires:	xfce4-terminal
 Requires:	xfce4-appfinder
+%ifnarch %{ix86}
 Requires:	thunar
 Requires:	thunar-volman
+%endif
+%ifarch %{ix86}
+Recommends:	thunar
+Recommends:	thunar-volman
+%endif
 Suggests:	xfce4-icon-theme
 Requires:	xfce4-pulseaudio-plugin
 Requires:	virtual-notification-daemon
