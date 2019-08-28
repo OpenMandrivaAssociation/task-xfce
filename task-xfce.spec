@@ -1,6 +1,6 @@
 Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
-Version:	3.0
+Version:	4.14
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/Xfce
@@ -10,14 +10,17 @@ BuildArch:	noarch
 
 # (tpg) please keep requires in alphabetical order
 Suggests:	eatmonkey
-Suggests:	slim
-Suggests:	orage
-Suggests:	gigolo
-Suggests:	midori
+Recommends:	ristretto
+Recommends:	thunar-archive-plugin
+Recommends:	xfmpc
+Recommends:	slim
+Recommends:	orage
+Recommends:	gigolo
+Recommends:	midori
 Requires:	gnome-keyring
-Suggests:	parole
-Suggests:	xarchiver
-Suggests:	ristretto
+Recommends:	parole
+Recommends:	xarchiver
+
 Requires:	task-xfce-plugins
 Requires:	task-xfce-minimal
 Suggests:	thunar-archive-plugin
@@ -25,16 +28,16 @@ Suggests:	thunar-media-tags-plugin
 Suggests:	thunar-shares-plugin
 #Suggests:	thunar-svn-plugin
 #Suggests:	thunar-vcs-plugin
-Suggests:	thunar-thumbnailers
-Suggests:	tumbler
-Suggests:	xfbib
-Suggests:	xfburn
-Suggests:	xfmpc
+Recommends:	thunar-thumbnailers
+Recommends:	tumbler
+Recommends:	xfbib
+Recommends:	xfburn
 #Requires:	xfprint
 #Suggests:	xfce4-artwork
-Suggests:	xfce4-appfinder
-Suggests:	xfce4-screenshooter
 Obsoletes:	xfce-trigger-launcher
+
+Requires:	task-xfce-minimal
+#Recommends:	xfce4-artwork
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -53,20 +56,29 @@ Requires:	exo
 Requires:	distro-xfce-config-OpenMandriva
 Requires:	mousepad
 Requires:	xfce4-terminal
+Requires:	xfce4-appfinder
 Requires:	thunar
 Requires:	thunar-volman
 Suggests:	xfce4-icon-theme
 Requires:	xfce4-pulseaudio-plugin
 Requires:	virtual-notification-daemon
-Suggests:	xfce4-notifyd
+Requires:	xfce4-notifyd
 Requires:	xfce4-panel
 Requires:	xfce4-power-manager
 Requires:	xfce4-session
 Requires:	xfce4-taskmanager
 Requires:	xfce4-settings
+Requires:	xfce4-screenshooter
 Requires:	xfconf
 Requires:	xfdesktop
 Requires:	xfwm4
+Requires:	xfce4-whiskermenu-plugin
+
+Recommends:	canberra-gtk
+Recommends:	adwaita-icon-theme
+Recommends:	xfce4-pulseaudio-plugin
+Recommends:	task-pulseaudio
+
 
 Provides:	xfce = %{EVRD}
 
@@ -93,50 +105,41 @@ Requires:	task-xfce-minimal
 
 # (tpg) please keep requires in alphabetical order
 
-Suggests:	xfce4-battery-plugin
-Suggests:	xfce4-calculator-plugin
-#Suggests:	xfce4-cddrive-plugin
-#Suggests:	xfce4-cellmodem-plugin
-Suggests:	xfce4-clipman-plugin
-Suggests:	xfce4-cpufreq-plugin
-Suggests:	xfce4-cpugraph-plugin
-Suggests:	xfce4-datetime-plugin
-Suggests:	xfce4-dict-plugin
-Suggests:	xfce4-diskperf-plugin
-#Suggests:	xfce4-embed-plugin
-Suggests:	xfce4-eyes-plugin
-Suggests:	xfce4-fsguard-plugin
-Suggests:	xfce4-genmon-plugin
-#Suggests:	xfce4-indicator-plugin
-#Suggests:	xfce4-linelight-plugin
-#Suggests:	xfce4-modemlights-plugin
-#Suggests:	xfce4-mailwatch-plugin
-#Suggests:	xfce4-minicmd-plugin
-Suggests:	xfce4-mount-plugin
-Suggests:	xfce4-mpc-plugin
-Suggests:	xfce4-netload-plugin
-Suggests:	xfce4-notes-plugin
-Suggests:	xfce4-places-plugin
-#Suggests:	xfce4-playercontrol-plugin
-Suggests:	xfce4-quicklauncher-plugin
-Suggests:	xfce4-radio-plugin
-#Suggests:	xfce4-rss-plugin
-Suggests:	xfce4-screenshooter-plugin
-Suggests:	xfce4-sensors-plugin
-Suggests:	xfce4-smartbookmark-plugin
-#Suggests:	xfce4-smartpm-plugin
-Suggests:	xfce4-statusnotifier-plugin
-Suggests:	xfce4-systemload-plugin
-Suggests:	xfce4-time-out-plugin
-Suggests:	xfce4-timer-plugin
-Suggests:	xfce4-verve-plugin
-Suggests:	xfce4-wavelan-plugin
-Suggests:	xfce4-weather-plugin
-#Suggests:	xfce4-websearch-plugin
-#Suggests:	xfce4-xfapplet-plugin
-Suggests:	xfce4-xkb-plugin
-# requires gdm
-#Suggests:	xfswitch-plugin
+Recommends:	xfce4-battery-plugin
+Recommends:	xfce4-calculator-plugin
+Recommends:	xfce4-clipman-plugin
+Recommends:	xfce4-cpufreq-plugin
+Recommends:	xfce4-cpugraph-plugin
+Recommends:	xfce4-datetime-plugin
+Recommends:	xfce4-diskperf-plugin
+Recommends:	xfce4-embed-plugin
+Recommends:	xfce4-equake-plugin
+Recommends:	xfce4-eyes-plugin
+Recommends:	xfce4-fsguard-plugin
+Recommends:	xfce4-genmon-plugin
+Recommends:	xfce4-hamster-plugin
+Recommends:	xfce4-hotcorner-plugin
+Recommends:	xfce4-kbdleds-plugin
+Recommends:	xfce4-linelight-plugin
+Recommends:	xfce4-mailwatch-plugin
+Recommends:	xfce4-mount-plugin
+Recommends:	xfce4-mpc-plugin
+Recommends:	xfce4-netload-plugin
+Recommends:	xfce4-notes-plugin
+Recommends:	xfce4-places-plugin
+Recommends:	xfce4-pulseaudio-plugin
+Recommends:	xfce4-quicklauncher-plugin
+Recommends:	xfce4-sensors-plugin
+Recommends:	xfce4-smartbookmark-plugin
+Recommends:	xfce4-statusnotifier-plugin
+Recommends:	xfce4-systemload-plugin
+Recommends:	xfce4-time-out-plugin
+Recommends:	xfce4-timer-plugin
+Recommends:	xfce4-verve-plugin
+Recommends:	xfce4-wavelan-plugin
+Recommends:	xfce4-weather-plugin
+Recommends:	xfce4-whiskermenu-plugin
+Recommends:	xfce4-xkb-plugin
 
 %description plugins
 This package is a meta-package, meaning that its purpose is to contain
