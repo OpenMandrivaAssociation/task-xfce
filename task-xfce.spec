@@ -1,6 +1,6 @@
 Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
-Version:	4.14
+Version:	4.16
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/Xfce
@@ -14,7 +14,6 @@ Recommends:	ristretto
 Recommends:	thunar-archive-plugin
 Recommends:	xfmpc
 Recommends:	slim
-Recommends:	orage
 Recommends:	gigolo
 Recommends:	midori
 Requires:	gnome-keyring
@@ -30,7 +29,6 @@ Suggests:	thunar-shares-plugin
 #Suggests:	thunar-vcs-plugin
 Recommends:	thunar-thumbnailers
 Recommends:	tumbler
-Recommends:	xfbib
 Recommends:	xfburn
 #Requires:	xfprint
 #Suggests:	xfce4-artwork
@@ -80,7 +78,7 @@ Requires:	xfdesktop
 Requires:	xfwm4
 Requires:	xfce4-whiskermenu-plugin
 
-Recommends:	canberra-gtk
+Recommends:	canberra-gtk3
 Recommends:	adwaita-icon-theme
 Recommends:	xfce4-pulseaudio-plugin
 Recommends:	task-pulseaudio
@@ -131,10 +129,8 @@ Recommends:	xfce4-mailwatch-plugin
 Recommends:	xfce4-mount-plugin
 Recommends:	xfce4-mpc-plugin
 Recommends:	xfce4-netload-plugin
-Recommends:	xfce4-notes-plugin
 Recommends:	xfce4-places-plugin
 Recommends:	xfce4-pulseaudio-plugin
-Recommends:	xfce4-quicklauncher-plugin
 Recommends:	xfce4-sensors-plugin
 Recommends:	xfce4-smartbookmark-plugin
 Recommends:	xfce4-statusnotifier-plugin
