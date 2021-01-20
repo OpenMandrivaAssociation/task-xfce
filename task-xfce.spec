@@ -142,6 +142,7 @@ Recommends:	xfce4-wavelan-plugin
 Recommends:	xfce4-weather-plugin
 Recommends:	xfce4-whiskermenu-plugin
 Recommends:	xfce4-xkb-plugin
+Recommends:	xfce4-notes-plugin
 
 %description plugins
 This package is a meta-package, meaning that its purpose is to contain
