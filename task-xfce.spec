@@ -1,8 +1,7 @@
 Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
-Version:	4.16
-Release:	2
-Epoch:		2
+Version:	4.17
+Release:	1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
 URL:		%{disturl}
@@ -51,7 +50,8 @@ Url:		%{disturl}
 # (tpg) please keep requires in alphabetical order
 
 Requires:	exo
-Requires:	distro-xfce-config-OpenMandriva
+# Old and broken. Let's disable it for now until re-wrote for current times.
+#Requires:	distro-xfce-config-OpenMandriva
 Requires:	mousepad
 Requires:	xfce4-terminal
 Requires:	xfce4-appfinder
