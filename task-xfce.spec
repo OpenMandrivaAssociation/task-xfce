@@ -1,6 +1,6 @@
 Summary:	Metapackage for the xfce desktop environment
 Name:		task-xfce
-Version:	4.17
+Version:	4.18
 Release:	1
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
